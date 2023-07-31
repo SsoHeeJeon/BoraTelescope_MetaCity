@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: efd19d0f486fc4d49bb4f4617ef07b2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8794741547044852449
+    second: bora_Vetc_1.selfie_s_11
+  - first:
+      213: -5674473584421011233
+    second: bora_Vetc_1.selfie_s_12
+  - first:
+      213: -3432141972878643749
+    second: bora_Vetc_1.selfie_s_212
+  - first:
+      213: 2892055161782861220
+    second: bora_Vetc_1.selfie_s_237
+  - first:
+      213: 2573989261278444964
+    second: bora_Vetc_1.selfie_s_238
+  - first:
+      213: -6549173325828526608
+    second: bora_Vetc_1.selfie_s_239
+  - first:
+      213: 2254483447415939252
+    second: bora_Vetc_1.selfie_s_266
+  - first:
+      213: 6603507956820985055
+    second: bora_Vetc_1.selfie_s_267
+  - first:
+      213: 4903522688020088457
+    second: bora_Vetc_1.selfie_s_268
+  - first:
+      213: 8917352225905736295
+    second: bora_Vetc_1.selfie_s_269
+  - first:
+      213: -3305054491974943671
+    second: bora_Vetc_1.selfie_s_270
+  - first:
+      213: -3776300634553538376
+    second: bora_Vetc_1.selfie_s_271
+  - first:
+      213: 6170926369947765060
+    second: bora_Vetc_1.selfie_s_272
+  - first:
+      213: 6694737887620715127
+    second: bora_Vetc_1.selfie_s_273
+  - first:
+      213: 5515550376646599523
+    second: bora_Vetc_1.selfie_s_13
+  - first:
+      213: 560071529860577020
+    second: bora_Vetc_1.selfie_s_14
+  - first:
+      213: -3082022183820373495
+    second: bora_Vetc_1.selfie_s_15
+  - first:
+      213: -3031098897847301081
+    second: bora_Vetc_1.selfie_s_16
+  - first:
+      213: 4197320179228904926
+    second: bora_Vetc_1.selfie_s_17
+  - first:
+      213: 1836595806381864932
+    second: bora_Vetc_1.selfie_s_18
+  - first:
+      213: -99255937092466928
+    second: bora_Vetc_1.selfie_s_19
+  - first:
+      213: -1098284711570126829
+    second: bora_Vetc_1.selfie_s_20
+  - first:
+      213: 2805229617420386885
+    second: bora_Vetc_1.selfie_s_21
+  - first:
+      213: -7184106743628578429
+    second: bora_Vetc_1.selfie_s_33
+  - first:
+      213: -1270598880623149838
+    second: bora_Vetc_1.selfie_s_34
+  - first:
+      213: 5743689518468255335
+    second: bora_Vetc_1.selfie_s_35
+  - first:
+      213: -6555353447448116151
+    second: bora_Vetc_1.selfie_s_36
+  - first:
+      213: 7562230551050909937
+    second: bora_Vetc_1.selfie_s_37
+  - first:
+      213: -2455026265518439345
+    second: bora_Vetc_1.selfie_s_38
+  - first:
+      213: -4076489157558966085
+    second: bora_Vetc_1.selfie_s_39
+  - first:
+      213: 4081540731576335949
+    second: bora_Vetc_1.selfie_s_40
+  - first:
+      213: 759852320658864835
+    second: bora_Vetc_1.selfie_s_41
+  - first:
+      213: 6347634202788891258
+    second: bora_Vetc_1.selfie_s_42
+  - first:
+      213: 4492581636341786931
+    second: bora_Vetc_1.selfie_s_43
+  - first:
+      213: -8036808705072552716
+    second: bora_Vetc_1.selfie_s_44
+  - first:
+      213: 1867808220453077497
+    second: bora_Vetc_1.selfie_s_45
+  - first:
+      213: -6610581857443860734
+    second: bora_Vetc_1.selfie_s_46
+  - first:
+      213: 5824192477726540902
+    second: bora_Vetc_1.selfie_s_47
+  - first:
+      213: 989964784759084262
+    second: bora_Vetc_1.selfie_s_48
+  - first:
+      213: -6012714842230213047
+    second: bora_Vetc_1.selfie_s_49
+  - first:
+      213: 5878937322686934340
+    second: bora_Vetc_1.selfie_s_50
+  - first:
+      213: 9147205900668655480
+    second: bora_Vetc_1.selfie_s_51
+  - first:
+      213: -1020214803077337127
+    second: bora_Vetc_1.selfie_s_52
+  - first:
+      213: 1241396074283575948
+    second: bora_Vetc_1.selfie_s_53
+  - first:
+      213: 2523655218126288173
+    second: bora_Vetc_1.selfie_s_54
+  - first:
+      213: 2951893135313374701
+    second: bora_Vetc_1.selfie_s_55
+  - first:
+      213: 7972030210622136449
+    second: bora_Vetc_1.selfie_s_56
+  - first:
+      213: 6330480940812426720
+    second: bora_Vetc_1.selfie_s_72
+  - first:
+      213: -2707719621476646353
+    second: bora_Vetc_1.selfie_s_73
+  - first:
+      213: -5390236794119649456
+    second: bora_Vetc_1.selfie_s_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1818
+        width: 1944
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87849b5a3eb1ebb0800000000000000
+      internalID: -4908432961003288692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03837ed9adbc44300800000000000000
+      internalID: 235537220342593584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb8ce618e46c07e0800000000000000
+      internalID: -1797951203247879202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_3
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e038137a26b049e0800000000000000
+      internalID: -1639109970927013662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_4
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd413d444d2aedfb0800000000000000
+      internalID: -4621077135064099621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_5
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cc9a710e43ab960800000000000000
+      internalID: 7618459856724937844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_6
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b4a7057649df960800000000000000
+      internalID: 7637423714542963471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_7
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7a65b595d30e280800000000000000
+      internalID: -9016139000001943611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_8
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbf0465a1b1b7b90800000000000000
+      internalID: -7243165775765111854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_9
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 1311
+        width: 386
+        height: 658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c0860a60fb09ba0800000000000000
+      internalID: -6084153061395657664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_10
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 1311
+        width: 386
+        height: 658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72aa298e8a61eb40800000000000000
+      internalID: 5467768583023665787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_22
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1626
+        width: 1356
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f0242e7f39747a0800000000000000
+      internalID: -6392978453166944402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9fd3f75b98157f0800000000000000
+      internalID: -625567460610934281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_24
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67393ee320336390800000000000000
+      internalID: -7826358796561074324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_25
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b25a5e9219693180800000000000000
+      internalID: -9135154840457293134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_26
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf27e6108b1866c0800000000000000
+      internalID: -4150036819667898450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_27
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee33af646aa4937e0800000000000000
+      internalID: -1785313699259862034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_28
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1438d98b2af74ae0800000000000000
+      internalID: -1565007280584772581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_29
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1626
+        width: 768
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa28a3df7f105f150800000000000000
+      internalID: 5905628650983293615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_30
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7fca86ce2a90300800000000000000
+      internalID: 218885193156327373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_31
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5e6862e0d061990800000000000000
+      internalID: -7415725381991864904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_32
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65752954e6fce6400800000000000000
+      internalID: 319420696110454614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_33
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 806
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381c78dcafcec4c90800000000000000
+      internalID: -7184106743628578429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_57
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1380
+        width: 886
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82d98c5cf4cb3300800000000000000
+      internalID: 232996393903051406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_58
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1380
+        width: 886
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3dd8f7e1a9e0010800000000000000
+      internalID: 1157031610060493796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_59
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1378
+        width: 195
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f372a23e098be2fd0800000000000000
+      internalID: -2364749821896939713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_60
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 1297
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047e723af651df350800000000000000
+      internalID: 6052017043478669120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_61
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1194
+        width: 768
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9f422e510f695b0800000000000000
+      internalID: -5361834329558943296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_62
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1194
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290e1ff6540f848e0800000000000000
+      internalID: -1708851877565570926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_63
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1194
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abcaaa756dee5f30800000000000000
+      internalID: 4566348092305755047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_64
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1194
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85526c278d00e75b0800000000000000
+      internalID: -5368852776140528296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_65
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1006
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d42aba308d919c0800000000000000
+      internalID: -3955893287392228084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_66
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1193
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060ca425e1c85f080800000000000000
+      internalID: -9154256605703126944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_67
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1193
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea9b7180fd518540800000000000000
+      internalID: 5008387548158597870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_68
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1193
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5f37d5df86e7140800000000000000
+      internalID: 4719324896934753735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_69
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1193
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226226e8ce3571b20800000000000000
+      internalID: 3105042743561430562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_70
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 1193
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173b8100c54a94db0800000000000000
+      internalID: -4807130412195728527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_71
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 1219
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d524a06033cd170800000000000000
+      internalID: 8204488722197142929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_76
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 788
+        width: 652
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c29e049277c60a0800000000000000
+      internalID: -6886998711089943452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_77
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1072
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c369dc7b5ea7472e0800000000000000
+      internalID: -2128941596789598660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_78
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1072
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a4311d172410670800000000000000
+      internalID: 8503150628058647118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_79
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1072
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72061da75d79301f0800000000000000
+      internalID: -1079852542494416857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_80
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1072
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b539f306ec93bc0800000000000000
+      internalID: -3802781497558869196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_81
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1072
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a407d579497420050800000000000000
+      internalID: 5765249176507871306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_82
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1072
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4164e4f04ff33a5a0800000000000000
+      internalID: -6511290318786247148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_83
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1006
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9380ce42e77e616c0800000000000000
+      internalID: -4172893475740841927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_88
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1012
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe2c60b8af8990f0800000000000000
+      internalID: -1109697878492958991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_89
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1012
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e380bdd452be560800000000000000
+      internalID: 7344004633675185778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_90
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1012
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d340512261c010800000000000000
+      internalID: 1207354070332069817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_91
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1012
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5832284b803704660800000000000000
+      internalID: 7368015471603491717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_92
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1012
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2f9b6f22e0b7520800000000000000
+      internalID: 2700767944869802702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_93
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1012
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e5e94468b178180800000000000000
+      internalID: -9113285057470112180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_102
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 574
+        width: 264
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4be0fe7536de220800000000000000
+      internalID: 2516776996093998276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_103
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 564
+        width: 281
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc4d8d5923605090800000000000000
+      internalID: -8047823504796726076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_104
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 679
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dca9f18d1ad236f0800000000000000
+      internalID: -706262371274216238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_107
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 601
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bbb457b98b40630800000000000000
+      internalID: 3892438955782290315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_115
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 523
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12eafbe8b2bb779c0800000000000000
+      internalID: -3929466354104553951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_116
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 445
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ca6a55543c600b0800000000000000
+      internalID: -5762703970616824700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_117
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c01c47147eb90d0800000000000000
+      internalID: -3414881624112690019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_118
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4901c619822312070800000000000000
+      internalID: 8079794356299239572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_119
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a2754f949461980800000000000000
+      internalID: -8568580659044996597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_123
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 134
+        width: 1920
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 96, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68234e2c6f83bac80800000000000000
+      internalID: -8310486054899273082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_124
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 134
+        width: 1873
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b077df20bcb311a50800000000000000
+      internalID: 6490034281132160779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_11
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e25afa27d23d0a70800000000000000
+      internalID: 8794741547044852449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_12
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 1778
+        width: 191
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd08f31f6583041b0800000000000000
+      internalID: -5674473584421011233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_212
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 1213
+        width: 336
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd2cd75f059e50d0800000000000000
+      internalID: -3432141972878643749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_237
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 1046
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adf6ecc8d4a22820800000000000000
+      internalID: 2892055161782861220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_238
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1046
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adfb267895a8b320800000000000000
+      internalID: 2573989261278444964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_239
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 1046
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fde6852f89ac15a0800000000000000
+      internalID: -6549173325828526608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_266
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 930
+        width: 211
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0a93b20c8894f10800000000000000
+      internalID: 2254483447415939252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_267
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 930
+        width: 229
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4c7c5ff7f54ab50800000000000000
+      internalID: 6603507956820985055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_268
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 930
+        width: 280
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986818f97efcc0440800000000000000
+      internalID: 4903522688020088457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_269
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 679
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a76227a9cc0cb70800000000000000
+      internalID: 8917352225905736295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_271
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 601
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8aa50a492e79bc0800000000000000
+      internalID: -3776300634553538376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_272
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 523
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449c3d7a6d883a550800000000000000
+      internalID: 6170926369947765060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_273
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 445
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7725bf773ac78ec50800000000000000
+      internalID: 6694737887620715127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_13
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1072
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363eacc48db2b8c40800000000000000
+      internalID: 5515550376646599523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 932
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6362ac616c5c700800000000000000
+      internalID: 560071529860577020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 932
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902538f27257a35d0800000000000000
+      internalID: -3082022183820373495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 932
+        width: 135
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ccbb2ac9f5fe5d0800000000000000
+      internalID: -3031098897847301081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 932
+        width: 155
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd8483f670ef3a30800000000000000
+      internalID: 4197320179228904926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_18
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 872
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7fc5bb726ec7910800000000000000
+      internalID: 1836595806381864932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 872
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01741c7404f5f9ef0800000000000000
+      internalID: -99255937092466928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_20
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 872
+        width: 135
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318ce90bfdb12c0f0800000000000000
+      internalID: -1098284711570126829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_21
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 872
+        width: 155
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5424fbb697d2ee620800000000000000
+      internalID: 2805229617420386885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_34
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 806
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcb27ccc0ded5ee0800000000000000
+      internalID: -1270598880623149838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_35
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 810
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e4f688f2fa5bf40800000000000000
+      internalID: 5743689518468255335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_36
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 679
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94409b375c4b605a0800000000000000
+      internalID: -6555353447448116151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_37
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 601
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8fef8ae9072f860800000000000000
+      internalID: 7562230551050909937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_38
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 523
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4405896e9efdedd0800000000000000
+      internalID: -2455026265518439345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_39
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 445
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb867f895b66d67c0800000000000000
+      internalID: -4076489157558966085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_40
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 996
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e35e1abab84a830800000000000000
+      internalID: 4081540731576335949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_41
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 918
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cab0a6e8a98b8a00800000000000000
+      internalID: 759852320658864835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_42
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 835
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a0a5d1da3571850800000000000000
+      internalID: 6347634202788891258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_43
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 757
+        width: 582
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339689e023bd85e30800000000000000
+      internalID: 4492581636341786931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_44
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 766
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f422664015877090800000000000000
+      internalID: -8036808705072552716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_45
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 766
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f109a03ea9cbe910800000000000000
+      internalID: 1867808220453077497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_46
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 766
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20faa6433de7244a0800000000000000
+      internalID: -6610581857443860734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_47
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 1127
+        width: 336
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664846a5330b3d050800000000000000
+      internalID: 5824192477726540902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_48
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e416b70abf0dbd00800000000000000
+      internalID: 989964784759084262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_49
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946362d25bb8e8ca0800000000000000
+      internalID: -6012714842230213047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_50
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 418
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d6a87d85e269150800000000000000
+      internalID: 5878937322686934340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_51
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 522
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87756bc7d4761fe70800000000000000
+      internalID: 9147205900668655480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_52
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 522
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfeafbba0877d1f0800000000000000
+      internalID: -1020214803077337127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_53
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 650
+        width: 263
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8aac3107235a3110800000000000000
+      internalID: 1241396074283575948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_54
+      rect:
+        serializedVersion: 2
+        x: 3244
+        y: 630
+        width: 338
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d257afbcc03d50320800000000000000
+      internalID: 2523655218126288173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_55
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 650
+        width: 359
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded8441ba2b37f820800000000000000
+      internalID: 2951893135313374701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_56
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1818
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180a0da2d3752ae60800000000000000
+      internalID: 7972030210622136449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_72
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed518610e26ad750800000000000000
+      internalID: 6330480940812426720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_73
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1626
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f228782b95f3c6ad0800000000000000
+      internalID: -2707719621476646353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_Vetc_1.selfie_s_74
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1194
+        width: 180
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0570247c1380235b0800000000000000
+      internalID: -5390236794119649456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2c2c8fb4380a3424aa2ba496e1abeaf4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

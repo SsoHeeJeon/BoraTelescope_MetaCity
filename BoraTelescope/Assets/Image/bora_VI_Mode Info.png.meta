@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: 8e61af62af18cd54c80d4abcf3f80da7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4267760501729552140
+    second: bora_VI_Mode Info_0
+  - first:
+      213: -1514775504373697948
+    second: bora_VI_Mode Info_1
+  - first:
+      213: -8613527173322889133
+    second: bora_VI_Mode Info_2
+  - first:
+      213: 8043447625865554594
+    second: bora_VI_Mode Info_3
+  - first:
+      213: 6608653543610097621
+    second: bora_VI_Mode Info_4
+  - first:
+      213: -251641228560743239
+    second: bora_VI_Mode Info_5
+  - first:
+      213: 25616546419193143
+    second: bora_VI_Mode Info_6
+  - first:
+      213: 8119641146133065418
+    second: bora_VI_Mode Info_7
+  - first:
+      213: -67917641605408113
+    second: bora_VI_Mode Info_8
+  - first:
+      213: -5588736102529303752
+    second: bora_VI_Mode Info_9
+  - first:
+      213: 8709860234326391965
+    second: bora_VI_Mode Info_10
+  - first:
+      213: 8066716314685046660
+    second: bora_VI_Mode Info_11
+  - first:
+      213: -2519032460196294042
+    second: bora_VI_Mode Info_12
+  - first:
+      213: 4046442991187774519
+    second: bora_VI_Mode Info_13
+  - first:
+      213: 6698543015543175288
+    second: bora_VI_Mode Info_14
+  - first:
+      213: 2162482824046693037
+    second: bora_VI_Mode Info_15
+  - first:
+      213: 99229245404795300
+    second: bora_VI_Mode Info_16
+  - first:
+      213: -4656210644582056257
+    second: bora_VI_Mode Info_17
+  - first:
+      213: -8434368637940434259
+    second: bora_VI_Mode Info_18
+  - first:
+      213: 8435450920678869400
+    second: bora_VI_Mode Info_19
+  - first:
+      213: 2219564490110270304
+    second: bora_VI_Mode Info_20
+  - first:
+      213: -9199409856448788461
+    second: bora_VI_Mode Info_21
+  - first:
+      213: 4710279494340829803
+    second: bora_VI_Mode Info_22
+  - first:
+      213: -7434111039907367716
+    second: bora_VI_Mode Info_23
+  - first:
+      213: 4340378034915493297
+    second: bora_VI_Mode Info_24
+  - first:
+      213: 4199273358255873626
+    second: bora_VI_Mode Info_25
+  - first:
+      213: 3188370186886146566
+    second: bora_VI_Mode Info_26
+  - first:
+      213: 8189975537686153027
+    second: bora_VI_Mode Info_27
+  - first:
+      213: 4750912805958343670
+    second: bora_VI_Mode Info_28
+  - first:
+      213: 645754241387918694
+    second: bora_VI_Mode Info_29
+  - first:
+      213: -4834382290119732903
+    second: bora_VI_Mode Info_30
+  - first:
+      213: 7046645143159305870
+    second: bora_VI_Mode Info_31
+  - first:
+      213: -257000500767701777
+    second: bora_VI_Mode Info_32
+  - first:
+      213: -6021590536409228116
+    second: bora_VI_Mode Info_33
+  - first:
+      213: 8192336288962923429
+    second: bora_VI_Mode Info_34
+  - first:
+      213: 7100346425332925141
+    second: bora_VI_Mode Info_35
+  - first:
+      213: -1716274723257066631
+    second: bora_VI_Mode Info_36
+  - first:
+      213: -3958013570462585983
+    second: bora_VI_Mode Info_37
+  - first:
+      213: 989309120416503741
+    second: bora_VI_Mode Info_38
+  - first:
+      213: -1708955872284534506
+    second: bora_VI_Mode Info_39
+  - first:
+      213: 862979176226645862
+    second: bora_VI_Mode Info_40
+  - first:
+      213: -4496489394537026123
+    second: bora_VI_Mode Info_41
+  - first:
+      213: -5874250595406592547
+    second: bora_VI_Mode Info_42
+  - first:
+      213: 7376308538055702383
+    second: bora_VI_Mode Info_43
+  - first:
+      213: -8400902873252316363
+    second: bora_VI_Mode Info_44
+  - first:
+      213: 5679511168067526525
+    second: bora_VI_Mode Info_45
+  - first:
+      213: 1381763651035581909
+    second: bora_VI_Mode Info_46
+  - first:
+      213: -3543010537417278898
+    second: bora_VI_Mode Info_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3795
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f897fb6f6ed5c4c0800000000000000
+      internalID: -4267760501729552140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_1
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 3795
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462b75354bf6afae0800000000000000
+      internalID: -1514775504373697948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_2
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 3795
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3582aea1caa967880800000000000000
+      internalID: -8613527173322889133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_3
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 3795
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaec2deff010af60800000000000000
+      internalID: 8043447625865554594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3503
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df918e3267a6bb50800000000000000
+      internalID: 6608653543610097621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_5
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 3503
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b44bc8c2adf18cf0800000000000000
+      internalID: -251641228560743239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_6
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 3503
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73530bdfc120b5000800000000000000
+      internalID: 25616546419193143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_7
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 3503
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace28ea4a92cea070800000000000000
+      internalID: 8119641146133065418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3211
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a902ac345be0ff0800000000000000
+      internalID: -67917641605408113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_9
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 3211
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bf6590022d072b0800000000000000
+      internalID: -5588736102529303752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_10
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 3211
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c335e7cb3afd870800000000000000
+      internalID: 8709860234326391965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_11
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 3211
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f76a8bfbbb2ff60800000000000000
+      internalID: 8066716314685046660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2919
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6625258e2599a0dd0800000000000000
+      internalID: -2519032460196294042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_13
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2919
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ccd95267ad72830800000000000000
+      internalID: 4046442991187774519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_14
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2919
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878ff1ad16106fc50800000000000000
+      internalID: 6698543015543175288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_15
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2919
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daacf20dbaea20e10800000000000000
+      internalID: 2162482824046693037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2627
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1dea31978806100800000000000000
+      internalID: 99229245404795300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_17
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2627
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe3b42a611d16fb0800000000000000
+      internalID: -4656210644582056257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_18
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2627
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa7dd6396a13fa80800000000000000
+      internalID: -8434368637940434259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_19
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2627
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8994e4f5bedb01570800000000000000
+      internalID: 8435450920678869400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2335
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bf71dd42a7dce10800000000000000
+      internalID: 2219564490110270304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_21
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2335
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3188423e971255080800000000000000
+      internalID: -9199409856448788461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_22
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2335
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62edf47e364e5140800000000000000
+      internalID: 4710279494340829803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_23
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2335
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4f285956bb4d890800000000000000
+      internalID: -7434111039907367716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1983
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5cb0293de1c3c30800000000000000
+      internalID: 4340378034915493297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_25
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1983
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e5a91eed0d64a30800000000000000
+      internalID: 4199273358255873626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_26
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1983
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a6bc1dacd5f3c20800000000000000
+      internalID: 3188370186886146566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_27
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1983
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3470ce2fb53a8a170800000000000000
+      internalID: 8189975537686153027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1691
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb500e8602aee140800000000000000
+      internalID: 4750912805958343670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_29
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1691
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665f02aaf0e26f800800000000000000
+      internalID: 645754241387918694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_30
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1691
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95159f8bbe2d8ecb0800000000000000
+      internalID: -4834382290119732903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_31
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1691
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 25, z: 55, w: 205}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86fd384c66bac160800000000000000
+      internalID: 7046645143159305870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_32
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1399
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4c4acf763fe6cf0800000000000000
+      internalID: -257000500767701777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_33
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1399
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac59769f430f6ca0800000000000000
+      internalID: -6021590536409228116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_34
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1399
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab4d20337601b170800000000000000
+      internalID: 8192336288962923429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_35
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1399
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d20f20647f798260800000000000000
+      internalID: 7100346425332925141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_36
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1107
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bd74f7b319e28e0800000000000000
+      internalID: -1716274723257066631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_37
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1107
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18be66cc0af4219c0800000000000000
+      internalID: -3958013570462585983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_38
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1107
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7da77476bbabd00800000000000000
+      internalID: 989309120416503741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_39
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1107
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61999a740b19848e0800000000000000
+      internalID: -1708955872284534506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_40
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 815
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6676c8f0dfae9fb00800000000000000
+      internalID: 862979176226645862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_41
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 815
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd2f4618b24991c0800000000000000
+      internalID: -4496489394537026123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_42
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 815
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5c923e4387a7ea0800000000000000
+      internalID: -5874250595406592547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_43
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 815
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67bd74b889ed5660800000000000000
+      internalID: 7376308538055702383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_44
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 523
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bbc3fb85ff96b80800000000000000
+      internalID: -8400902873252316363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_45
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 523
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f5786e05da1de40800000000000000
+      internalID: 5679511168067526525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_46
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 523
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddc58f38b20d2310800000000000000
+      internalID: 1381763651035581909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_VI_Mode Info_47
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 523
+        width: 664
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4af6c910b2b4dec0800000000000000
+      internalID: -3543010537417278898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 855347b48c164b447b9e0788240f33ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

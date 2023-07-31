@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CartoonMode.unity
+    guid: d723c307ab6ef0546be008d6aa47c9b2
+  - enabled: 1
+    path: Assets/Scenes/JaemilangMode.unity
+    guid: bd7c060798c630145881fbc1db1c58e6
+  - enabled: 1
+    path: Assets/Scenes/WaitingMode.unity
+    guid: ae5d9d56ff3dfcc409eaf678a9cbb76d
   m_configObjects: {}
