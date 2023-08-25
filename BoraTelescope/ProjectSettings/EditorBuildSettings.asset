@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/JaemilangMode.unity
     guid: bd7c060798c630145881fbc1db1c58e6
   - enabled: 1
+    path: Assets/Scenes/VisitMode.unity
+    guid: 11c7cee196cb34d4fb2d396f6b2a4cf4
+  - enabled: 1
     path: Assets/Scenes/WaitingMode.unity
     guid: ae5d9d56ff3dfcc409eaf678a9cbb76d
   m_configObjects: {}

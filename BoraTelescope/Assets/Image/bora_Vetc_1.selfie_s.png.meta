@@ -857,9 +857,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 332
-        y: 1194
+        y: 1224
         width: 180
-        height: 150
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,9 +878,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 528
-        y: 1194
+        y: 1224
         width: 180
-        height: 150
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -899,9 +899,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 724
-        y: 1194
+        y: 1224
         width: 180
-        height: 150
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2578,10 +2578,10 @@ TextureImporter:
       name: bora_Vetc_1.selfie_s_74
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1194
+        x: 2046
+        y: 1848
         width: 180
-        height: 150
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

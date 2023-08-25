@@ -29,6 +29,8 @@ public class CustomProcedure
 public class SelfiFunction : MonoBehaviour
 {
     public GameManager gamemanager;
+    public JaemilangMode jaemilangmode;
+    public SelfiLightControl selfilightcontrol;
 
     public enum SelfiState
     {
@@ -51,6 +53,7 @@ public class SelfiFunction : MonoBehaviour
     public GameObject Download_Btn;
     public RawImage PhotoOrigin;
     public GameObject PhotoPreview;
+    public GameObject ConfirmUI;
 
     public Camera SelfiCam;
     public Camera PreviewCam;
@@ -63,8 +66,10 @@ public class SelfiFunction : MonoBehaviour
     public Image rotation_obj;
     public Image[] Scale_obj;
 
-    public GameObject[] StrickerList;
+    public List<GameObject> StrickerList;
     public GameObject[] FrameList;
+    public Sprite[] PenImg;
+    public Image SelectPenImg;
     public GameObject CustomObj;
     public GameObject StickerObj;
     public GameObject UIStickBtn;
@@ -92,7 +97,7 @@ public class SelfiFunction : MonoBehaviour
     public Sprite[] Btn_language;
 
     public static bool selfimode = false;
-
+    /*
     private void Update()
     {
         if (CustomScrollbar.value == 0)
@@ -127,6 +132,17 @@ public class SelfiFunction : MonoBehaviour
             }
             CustomCategory.transform.GetChild(3).transform.GetChild(0).gameObject.SetActive(true);
         }
+    }
+    */
+
+    public void ClickCustom()
+    {
+        PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1344, 756);
+        PhotoOrigin.gameObject.transform.localPosition = new Vector3(0, 125, 0);
+
+        ConfirmUI.SetActive(false);
+        CustomUI.transform.GetChild(0).gameObject.SetActive(true);
+        CustomUI.transform.parent.gameObject.GetComponent<StickerMake>().ReadytoStart();
     }
 
     public void ChangeFace(GameObject btn)
@@ -179,9 +195,21 @@ public class SelfiFunction : MonoBehaviour
     {
         s1++;
         drawing.enabled = false;
+
+        if (SelectPenImg.gameObject.activeSelf)
+        {
+            SelectPenImg.gameObject.SetActive(false);
+        }
+
         for (int index = 0; index < UIPenColorBtn.transform.childCount; index++)
         {
             UIPenColorBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+
+        GameObject Allbtn = UIPenColorBtn.transform.parent.gameObject.transform.GetChild(0).gameObject;
+        for (int index = 0; index < Allbtn.transform.GetChild(2).transform.childCount; index++)
+        {
+            Allbtn.transform.GetChild(2).transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
 
         if (StickerObj.transform.childCount != 0)
@@ -193,7 +221,7 @@ public class SelfiFunction : MonoBehaviour
             }
         }
 
-        for (int index = 0; index < StrickerList.Length; index++)
+        for (int index = 0; index < StrickerList.Count; index++)
         {
             if (btn.name == StrickerList[index].name)
             {
@@ -213,9 +241,21 @@ public class SelfiFunction : MonoBehaviour
     public void setFrame(GameObject btn)
     {
         drawing.enabled = false;
+
+        if (SelectPenImg.gameObject.activeSelf)
+        {
+            SelectPenImg.gameObject.SetActive(false);
+        }
+
         for (int index = 0; index < UIPenColorBtn.transform.childCount; index++)
         {
             UIPenColorBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+
+        GameObject Allbtn = UIPenColorBtn.transform.parent.gameObject.transform.GetChild(0).gameObject;
+        for (int index = 0; index < Allbtn.transform.GetChild(2).transform.childCount; index++)
+        {
+            Allbtn.transform.GetChild(2).transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
 
         for (int index = 0; index < btn.transform.parent.gameObject.transform.childCount; index++)
@@ -259,36 +299,48 @@ public class SelfiFunction : MonoBehaviour
         {
             case "Red":
                 drawing.SelectColor = drawing.Pen_Red;
+                SelectPenImg.sprite = PenImg[0];
                 break;
             case "Orange":
                 drawing.SelectColor = drawing.Pen_Orange;
+                SelectPenImg.sprite = PenImg[1];
                 break;
             case "Yellow":
                 drawing.SelectColor = drawing.Pen_Yellow;
+                SelectPenImg.sprite = PenImg[2];
                 break;
-            case "Lightgreen":
-                drawing.SelectColor = drawing.Pen_Lightgreen;
+            case "LightGreen":
+                drawing.SelectColor = drawing.Pen_LightGreen;
+                SelectPenImg.sprite = PenImg[3];
                 break;
             case "Green":
                 drawing.SelectColor = drawing.Pen_Green;
+                SelectPenImg.sprite = PenImg[4];
                 break;
             case "LightBlue":
                 drawing.SelectColor = drawing.Pen_LightBlue;
+                SelectPenImg.sprite = PenImg[5];
                 break;
             case "Blue":
                 drawing.SelectColor = drawing.Pen_Blue;
+                SelectPenImg.sprite = PenImg[6];
                 break;
             case "Purple":
                 drawing.SelectColor = drawing.Pen_Purple;
+                SelectPenImg.sprite = PenImg[7];
                 break;
             case "Black":
                 drawing.SelectColor = drawing.Pen_Black;
+                SelectPenImg.sprite = PenImg[8];
                 break;
             case "White":
                 drawing.SelectColor = drawing.Pen_White;
+                SelectPenImg.sprite = PenImg[9];
                 break;
         }
 
+        SelectPenImg.gameObject.SetActive(true);
+        
         if (StickerObj.transform.childCount != 0)
         {
             for (int index = 0; index < StickerObj.transform.childCount; index++)
@@ -301,10 +353,17 @@ public class SelfiFunction : MonoBehaviour
         {
             UIPenColorBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
+
+        GameObject Allbtn = UIPenColorBtn.transform.parent.gameObject.transform.GetChild(0).gameObject;
+        for (int index = 0; index < Allbtn.transform.GetChild(2).transform.childCount; index++)
+        {
+            Allbtn.transform.GetChild(2).transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+
         btn.transform.GetChild(0).gameObject.SetActive(true);
         drawing.enabled = true;
     }
-
+    /*
     public void selectSkicker(GameObject stick)
     {
         if (StickerObj.transform.childCount != 0)
@@ -323,10 +382,10 @@ public class SelfiFunction : MonoBehaviour
         }
         SelectItem = stick;
     }
-
+    */
     public void ResetAll()
     {
-        if (selfistate == SelfiState.Take)
+        if (selfistate == SelfiState.Take || selfistate == SelfiState.Download)
         {
             if (StickerObj.transform.childCount != 0)
             {
@@ -359,7 +418,7 @@ public class SelfiFunction : MonoBehaviour
             }
             for (int index = 0; index < UIStickBtn.transform.childCount; index++)
             {
-                UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(2).gameObject.SetActive(false);
             }
             for (int index = 0; index < UIPenColorBtn.transform.childCount; index++)
             {
@@ -386,17 +445,24 @@ public class SelfiFunction : MonoBehaviour
     {
         selfistate = SelfiState.None;
 
+        ResetAll();
+
         SelfiUndo.Clear();
         ProcedureNum = 0;
-
-        //gamemanager.NavigationBar.SetActive(false);
-        //gamemanager.Arrow.SetActive(false);
-        //gamemanager.MiniMap_Background.transform.parent.parent.gameObject.SetActive(false);
 
         this.transform.GetChild(0).gameObject.SetActive(true);
         this.transform.GetChild(0).gameObject.GetComponent<Controller>().enabled = true;
 
         CustomUI.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = SelfiCam;
+
+        if (SelectPenImg.gameObject.activeSelf)
+        {
+            SelectPenImg.gameObject.SetActive(false);
+        }
+
+        FinalCam.gameObject.SetActive(false);
+        CustomUI.SetActive(false);
+        PhotoOrigin.gameObject.SetActive(false);
 
         SelfiCam.gameObject.SetActive(true);
         PreviewCam.gameObject.SetActive(true);
@@ -410,6 +476,11 @@ public class SelfiFunction : MonoBehaviour
         TakePhoto_Btn.transform.GetChild(0).gameObject.SetActive(true);
         Confirm_Btn.transform.GetChild(0).gameObject.SetActive(true);
         Download_Btn.transform.GetChild(0).gameObject.SetActive(true);
+
+        if (jaemilangmode.capturemode.QRCodeImage.transform.parent.gameObject.activeSelf)
+        {
+            jaemilangmode.capturemode.QRCodeImage.transform.parent.gameObject.SetActive(false);
+        }
 
         if (FinalCam.transform.childCount != 0)
         {
@@ -432,10 +503,16 @@ public class SelfiFunction : MonoBehaviour
         PhotoPreview.transform.rotation = Quaternion.Euler(0, 0, 0);
         PhotoPreview.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
 
+        PhotoOrigin.transform.localPosition = new Vector3(0, 125, 0);
+        PhotoOrigin.transform.localScale = new Vector3(1, 1, 1);
+
         SelfiPhoto.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = SelfiCam;
 
         Lightvalue.value = 0.1f;
         Totalvalue.value = 0;
+
+        selfilightcontrol.gamemanager = gamemanager;
+        selfilightcontrol.ReadytoStart();
    }
 
     public void CloseTakeBtn()
@@ -443,19 +520,24 @@ public class SelfiFunction : MonoBehaviour
         TakePhoto_Btn.transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    public void TakePhoto()
+    public void QResetPhoto()
     {
+        NoticeWindow.NoticeWindowOpen("ResetSelfiPhoto");
+    }
+
+    public void TakePhoto()
+    { 
         selfistate = SelfiState.Take;
         //gamemanager.Selfi_Obj.transform.position = jaemilangmode.CameraWindow.transform.position;
         PRS.SetActive(false);
-        gamemanager.jaemilangmode.CaptueObject.gameObject.SetActive(true);
-        //gamemanager.FlashEffect();
+        jaemilangmode.CaptueObject.gameObject.SetActive(true);
+        //jaemilangmode.capturemode.FlashEffect();
         PhotoCount.SetActive(true);
         TakeCountStart = true;
-        countF = 3.2f;
+        countF = 5.2f;
         TakeCount();
         //Invoke("countdelay", 1.5f);
-        //gamemanager.CaptureCamera();
+        jaemilangmode.capturemode.CaptureCamera();
         TakePhoto_Btn.SetActive(false);
         lightcontrol.SetActive(false);
         CustomScrollbar.value = 0;
@@ -477,7 +559,7 @@ public class SelfiFunction : MonoBehaviour
             if ((int)countF == 0)
             {
                 TakeCountStart = false;
-                gamemanager.jaemilangmode.capturemode.FlashEffect();
+                //jaemilangmode.capturemode.FlashEffect();
                 Invoke("countdelay", 0.01f);
             }
             else
@@ -487,12 +569,51 @@ public class SelfiFunction : MonoBehaviour
         }
     }
 
+    public void CustomPhoto()
+    {
+        PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1344, 756);
+        PhotoOrigin.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+        CustomUI.transform.GetChild(0).gameObject.SetActive(true);
+        ConfirmUI.SetActive(false);
+    }
+
     public void GetPhoto()
     {
         selfistate = SelfiState.Download;
 
-        PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1920, 1080);
-        PhotoOrigin.gameObject.transform.localPosition = new Vector3(0,0, 0);
+        Download_Btn.SetActive(true);
+
+        if (gamemanager.jaemilangmode.Jaemilang_background.activeSelf)
+        {
+            gamemanager.jaemilangmode.Jaemilang_background.SetActive(false);
+        } else if (gamemanager.jaemilangmode.Graffiti_background.activeSelf)
+        {
+            gamemanager.jaemilangmode.Graffiti_background.SetActive(false);
+        }
+
+        if (SelectPenImg.gameObject.activeSelf)
+        {
+            SelectPenImg.gameObject.SetActive(false);
+        }
+
+        //PhotoOrigin.GetComponent<RectTransform>().sizeDelta = new Vector2(1920, 1080);
+        PhotoOrigin.transform.localScale = new Vector3(PhotoOrigin.transform.localScale.x * 1.428f, PhotoOrigin.transform.localScale.y * 1.428f, PhotoOrigin.transform.localScale.z);
+        PhotoOrigin.transform.localPosition = new Vector3(0, 0, 0);
+        
+        if (FinalCam.transform.childCount != 0) {
+            for (int index = 0; index < FinalCam.transform.childCount; index++)
+            {
+                LineRenderer changeLP = FinalCam.transform.GetChild(index).gameObject.GetComponent<LineRenderer>();
+                for (int indexL = 0;indexL< changeLP.positionCount; indexL++)
+                {
+                    float linex = changeLP.GetPosition(indexL).x * 1.428f;
+                    float liney = changeLP.GetPosition(indexL).y * 1.428f - 125;
+                    float linez = changeLP.GetPosition(indexL).z;
+
+                    changeLP.SetPosition(indexL, new Vector3(linex, liney, linez));
+                }
+            }
+        }
 
         this.transform.GetChild(0).gameObject.GetComponent<Controller>().enabled = false;
         this.transform.GetChild(0).gameObject.SetActive(false);
@@ -501,18 +622,13 @@ public class SelfiFunction : MonoBehaviour
             if (StickerObj.transform.GetChild(index).transform.GetChild(0).gameObject.activeSelf)
             {
                 count_a++;
-            }
-        }
-
-        for (int index = 0; index < StickerObj.transform.childCount; index++)
-        {
-            if (StickerObj.transform.GetChild(index).transform.GetChild(0).gameObject.activeSelf)
-            {
+                
                 StickerObj.transform.GetChild(index).gameObject.GetComponent<Button>().enabled = true;
                 StickerObj.transform.GetChild(index).transform.GetChild(0).gameObject.SetActive(false);
             }
         }
-        Confirm_Btn.SetActive(false);
+
+        //Confirm_Btn.SetActive(false);
         Download_Btn.SetActive(true);
         CustomUI.SetActive(false);
         drawing.enabled = false;
@@ -555,17 +671,14 @@ public class SelfiFunction : MonoBehaviour
         if (selfistate == SelfiState.Take)
         {
             PhotoCount.SetActive(false);
-            //gamemanager.screencapture.ClickScreenShot();
-            gamemanager.jaemilangmode.capturemode.ReadyToCapture();
+            jaemilangmode.capturemode.ClickScreenShot();
+            jaemilangmode.capturemode.ReadyToCapture();
             gamemanager.ButtonClickSound();
         }
         else if (selfistate == SelfiState.Download)
         {
-            gamemanager.jaemilangmode.capturemode.CaptureCamera();
-            for (int index = 0; index < StickerObj.transform.childCount; index++)
-            {
-                Destroy(StickerObj.transform.GetChild(index).gameObject);
-            }
+            jaemilangmode.capturemode.CaptureCamera();
+            
             for (int os = 0; os < FrameList.Length; os++)
             {
                 FrameList[os].SetActive(false);
@@ -586,7 +699,12 @@ public class SelfiFunction : MonoBehaviour
     {
         selfistate = SelfiState.None;
 
-        gamemanager.jaemilangmode.capturemode.QRCodeImage.transform.parent.gameObject.SetActive(false);
+        selfilightcontrol.LightOff();
+
+        this.transform.GetChild(0).gameObject.GetComponent<Controller>().MoveOtehrmode();
+
+        jaemilangmode.Liveobj.SetActive(true);
+        jaemilangmode.capturemode.QRCodeImage.transform.parent.gameObject.SetActive(false);
         countI.gameObject.SetActive(false);
 
         Lightvalue.value = 0;
@@ -606,14 +724,26 @@ public class SelfiFunction : MonoBehaviour
             drawing.enabled = false;
         }
 
+        if(StickerObj.transform.childCount != 0)
+        {
+            for (int index = StickerObj.transform.childCount - 1; index >= 0; index--)
+            {
+                Destroy(StickerObj.transform.GetChild(index).gameObject);
+            }
+        }
+
+        for(int index = 0; index < CustomObj.transform.GetChild(1).gameObject.transform.childCount; index++)
+        {
+            CustomObj.transform.GetChild(1).gameObject.transform.GetChild(index).gameObject.SetActive(false);
+        }
+
         Download_Btn.SetActive(false);
-        gamemanager.Selfi_Obj.SetActive(false);
+        Selfi_Obj.SetActive(false);
         gamemanager.CaptureBtn.transform.GetChild(0).gameObject.SetActive(false);
+        gamemanager.MenuBar.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
         CustomUI.SetActive(false);
         FinalCam.gameObject.SetActive(false);
         PhotoOrigin.gameObject.SetActive(false);
-
-
 
         if (FinalCam.transform.childCount != 0)
         {
@@ -637,7 +767,7 @@ public class SelfiFunction : MonoBehaviour
         {
             if (item.transform.parent.parent.name.Contains(UIStickBtn.transform.GetChild(index).gameObject.name))
             {
-                UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(2).gameObject.SetActive(false);
             }
         }
 
@@ -652,27 +782,13 @@ public class SelfiFunction : MonoBehaviour
 
     public void DontDrag()
     {
-        if (SceneManager.GetActiveScene().name.Contains("XRMode"))
-        {
-            GameManager.UITouch = true;
-        }
-        else if (SceneManager.GetActiveScene().name.Contains("ClearMode"))
-        {
-            GameManager.UITouch = true;
-        }
+        GameManager.UITouch = true;
 
     }
 
     public void StartDrag()
     {
-        if (SceneManager.GetActiveScene().name.Contains("XRMode"))
-        {
-            GameManager.UITouch = false;
-        }
-        else if (SceneManager.GetActiveScene().name.Contains("ClearMode"))
-        {
-            GameManager.UITouch = false;
-        }
+        GameManager.UITouch = false;
     }
 
     public void SaveUndo(string objname, GameObject obj, string type)
@@ -735,7 +851,7 @@ public class SelfiFunction : MonoBehaviour
                                 {
                                     if (undoobj.name.Contains(UIStickBtn.transform.GetChild(index).gameObject.name))
                                     {
-                                        UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                                        UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(2).gameObject.SetActive(false);
                                     }
                                 }
                             }
@@ -802,7 +918,7 @@ public class SelfiFunction : MonoBehaviour
                                 {
                                     if (undoobj.name.Contains(UIStickBtn.transform.GetChild(index).gameObject.name))
                                     {
-                                        UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                                        UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(2).gameObject.SetActive(false);
                                     }
                                 }
                             }
@@ -854,7 +970,7 @@ public class SelfiFunction : MonoBehaviour
                     {
                         if (undoobj.name.Contains(UIStickBtn.transform.GetChild(index).gameObject.name))
                         {
-                            UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                            UIStickBtn.transform.GetChild(index).gameObject.transform.GetChild(2).gameObject.SetActive(false);
                         }
                     }
                 }
@@ -951,15 +1067,39 @@ public class SelfiFunction : MonoBehaviour
         {
             case "All":
                 CustomScrollbar.value = 0;
+                UIStickBtn.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                UIStickBtn.SetActive(false);
+                UIFrameBtn.SetActive(false);
+                UIPenColorBtn.SetActive(false);
+
+                UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(196 * (StrickerList.Count + 14), UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().rect.height);
                 break;
             case "Sticker":
-                CustomScrollbar.value = 0.001f;
+                CustomScrollbar.value = 0;
+                UIStickBtn.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIStickBtn.SetActive(true);
+                UIFrameBtn.SetActive(false);
+                UIPenColorBtn.SetActive(false);
+
+                UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(196 * StrickerList.Count, UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().rect.height);
                 break;
             case "Frame":
-                CustomScrollbar.value = 0.597f;
+                CustomScrollbar.value = 0;
+                UIStickBtn.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIStickBtn.SetActive(false);
+                UIFrameBtn.SetActive(true);
+                UIPenColorBtn.SetActive(false);
+
+                UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(196 * 4, UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().rect.height);
                 break;
             case "PenColor":
-                CustomScrollbar.value = 0.928f;
+                CustomScrollbar.value = 0;
+                UIStickBtn.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                UIStickBtn.SetActive(false);
+                UIFrameBtn.SetActive(false);
+                UIPenColorBtn.SetActive(true);
+
+                UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(196 * 10, UIStickBtn.transform.parent.gameObject.GetComponent<RectTransform>().rect.height);
                 break;
         }
 

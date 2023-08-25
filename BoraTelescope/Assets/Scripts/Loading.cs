@@ -43,7 +43,6 @@ public class Loading : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        print(3123123);
         yield return new WaitForSeconds(1f);
         Debug.Log(nextScene);
 

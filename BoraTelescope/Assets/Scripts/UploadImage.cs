@@ -26,7 +26,7 @@ public class UploadImage : QRMaker
 
     private void Update()
     {
-        gamemanager.jaemilangmode.CaptueObject.gameObject.GetComponent<ScreenCapture>().playFlashEffect();
+        gamemanager.jaemilangmode.capturemode.gameObject.GetComponent<CaptureMode>().playFlashEffect();
 
         if (ScreenCapture.counttime == true)
         {

@@ -73,17 +73,11 @@ namespace NNCam {
             if (_webcam != null) Destroy(_webcam);
             if (_mask != null) Destroy(_mask);
         }
-        ///// <summary>
-        ///// ƒ‹≈Ÿ√˜ ¡æ∑·«“∂ß
-        ///// </summary>
-        //private void OnApplicationQuit()
-        //{
-        //    var processList = System.Diagnostics.Process.GetProcessesByName("XRTeleSpinCam");
-        //    if (processList.Length != 0)
-        //    {
-        //        processList[0].Kill();
-        //    }
-        //}
+
+        public void MoveOtehrmode()
+        {
+            _webcam.Stop();
+        }
 
         public void readytostart()
         {

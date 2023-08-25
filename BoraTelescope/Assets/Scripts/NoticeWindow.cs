@@ -16,6 +16,7 @@ public class NoticeWindow : MonoBehaviour
     public static GameObject ButType_1;
     public static GameObject ButType_2;
 
+    public Sprite CameraIcon;
     public Sprite ErrorIcon;
     public Sprite CheckIcon;
 
@@ -27,7 +28,7 @@ public class NoticeWindow : MonoBehaviour
     private void ReadytoStart()
     {
         gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        noticewindow = gamemanager.ErrorMessage.transform.parent.GetComponent<NoticeWindow>();
+        noticewindow = gamemanager.gameObject.GetComponent<NoticeWindow>();
         KEfont = Titlefont_KE;
         CJfont = Titlefont_CJ;
     }
@@ -35,7 +36,7 @@ public class NoticeWindow : MonoBehaviour
     public static void NoticeWindowOpen(string Window)
     {
         gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        noticewindow = gamemanager.ErrorMessage.transform.parent.GetComponent<NoticeWindow>();
+        noticewindow = gamemanager.gameObject.GetComponent<NoticeWindow>();
         if (!gamemanager.ErrorMessage.activeSelf)
         {
             gamemanager.ErrorMessage.SetActive(true);
@@ -107,62 +108,22 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "I'm sorry.\r\nYou can't use mode.";
                         NoticeText.font = Titlefont_KE;
                         break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "绐您添麻烦子, 真抱歉。 目前不能使用。";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "すみません。 現在のモードは利用できません。";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
                 }
                 ButType_1.SetActive(true);
                 ButType_2.SetActive(false);
                 NoticeIcon.sprite = ErrorIcon;
                 gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.Fail_InternetConnect, "InternetConnect Fail", GetType().ToString());
                 break;
-            case "See360View":
-                switch (GameManager.currentLang)
-                {
-                    case GameManager.Language_enum.Korea:
-                        NoticeText.text = "화면을 터치하여 360 View를\r\n관람해 주세요.";
-                        NoticeText.font = Titlefont_KE;
-                        break;
-                    case GameManager.Language_enum.English:
-                        NoticeText.text = "Touch the screen to view 360 photo.";
-                        NoticeText.font = Titlefont_KE;
-                        break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "请按屏幕观看 360 view。";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "画面をタッチして360 Viewをご覧ください。";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
-                }
-                ButType_1.SetActive(true);
-                ButType_2.SetActive(false);
-                NoticeIcon.sprite = CheckIcon;
-                break;
             case "VisitClickCap":
                 switch (GameManager.currentLang)
                 {
                     case GameManager.Language_enum.Korea:
-                        NoticeText.text = "사진촬영 기능이 제공되지 않는 모드입니다.\r\n(실시간, XR, 맑은날모드 내에서 사용가능합니다.)";
+                        NoticeText.text = "사진촬영 기능이 제공되지 않는 모드입니다.\r\n(재미랑 모드 내에서 사용가능합니다.)";
                         NoticeText.font = Titlefont_KE;
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "Mode Not Supported\r\n(Use only for Live, XR and Clear Mode)";
+                        NoticeText.text = "Mode Not Supported\r\n(Use only for Jaemilang Mode)";
                         NoticeText.font = Titlefont_KE;
-                        break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "不支持模式\r\n(仅用于实时、XR和清除模式)";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "モードがサポートされていない\r\n（ライブ、XR、およびクリア モードでのみ使用";
-                        NoticeText.font = Titlefont_CJ;
                         break;
                 }
                 ButType_1.SetActive(true);
@@ -180,14 +141,6 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "Are you sure you want to cancel?\r\nType will be deleted.";
                         NoticeText.font = Titlefont_KE;
                         break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "确定要取消吗？\r\n类型将被删除";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "キャンセルしてよろしいですか？\r\nタイプが削除されます";
-                        NoticeText.font = Titlefont_CJ;
-                        break;
                 }
                 ButType_1.SetActive(false);
                 ButType_2.SetActive(true);
@@ -200,12 +153,6 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "사진찍기를 그만하시겠습니까?";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Japanese:
                         NoticeText.text = "";
                         break;
                 }
@@ -222,12 +169,6 @@ public class NoticeWindow : MonoBehaviour
                     case GameManager.Language_enum.English:
                         NoticeText.text = "";
                         break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "";
-                        break;
                 }
                 ButType_1.SetActive(false);
                 ButType_2.SetActive(true);
@@ -240,12 +181,6 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "셀피모드에서 나가시겠습니까?\r\n해당 사진은 삭제됩니다.";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Japanese:
                         NoticeText.text = "";
                         break;
                 }
@@ -262,16 +197,24 @@ public class NoticeWindow : MonoBehaviour
                     case GameManager.Language_enum.English:
                         NoticeText.text = "";
                         break;
-                    case GameManager.Language_enum.Chinese:
-                        NoticeText.text = "";
-                        break;
-                    case GameManager.Language_enum.Japanese:
-                        NoticeText.text = "";
-                        break;
                 }
                 ButType_1.SetActive(false);
                 ButType_2.SetActive(true);
-                NoticeIcon.sprite = CheckIcon;
+                NoticeIcon.sprite = CameraIcon;
+                break;
+            case "ErrorLight":
+                switch (GameManager.currentLang)
+                {
+                    case GameManager.Language_enum.Korea:
+                        NoticeText.text = "죄송합니다. 현재 조명 사용이 어렵습니다.";
+                        break;
+                    case GameManager.Language_enum.English:
+                        NoticeText.text = "";
+                        break;
+                }
+                ButType_1.SetActive(true);
+                ButType_2.SetActive(false);
+                NoticeIcon.sprite = ErrorIcon;
                 break;
         }
     }
@@ -296,22 +239,48 @@ public class NoticeWindow : MonoBehaviour
                 
                 break;
             case "VisitCancel":
-                //gamemanager.visitmanager.RealOut();
+                gamemanager.visitmanager.RealOut();
                 gamemanager.transform.GetChild(1).gameObject.SetActive(true);
                 break;
             case "StopSelfi":
-                gamemanager.selfifunction.FinishSelfi();
+                gamemanager.jaemilangmode.selfifunction.FinishSelfi();
                 gamemanager.CaptureBtn.transform.GetChild(0).gameObject.SetActive(false);
+
+                if(GameManager.MoveVisit == true)
+                {
+                    gamemanager.Menu(gamemanager.MenuBar.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject);
+                } else if(GameManager.MoveVisit == false)
+                {
+                    gamemanager.MenuBar.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
             case "StopSelfiCustom":
-                gamemanager.selfifunction.FinishSelfi();
+                gamemanager.jaemilangmode.selfifunction.FinishSelfi();
                 gamemanager.CaptureBtn.transform.GetChild(0).gameObject.SetActive(false);
+
+                if (GameManager.MoveVisit == true)
+                {
+                    gamemanager.Menu(gamemanager.MenuBar.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject);
+                }
+                else if (GameManager.MoveVisit == false)
+                {
+                    gamemanager.MenuBar.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
             case "DontSaveSelfi":
-                gamemanager.selfifunction.FinishSelfi();
+                gamemanager.jaemilangmode.selfifunction.FinishSelfi();
                 gamemanager.CaptureBtn.transform.GetChild(0).gameObject.SetActive(false);
+                if (GameManager.MoveVisit == true)
+                {
+                    gamemanager.Menu(gamemanager.MenuBar.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject);
+                }
+                else if (GameManager.MoveVisit == false)
+                {
+                    gamemanager.MenuBar.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+                }
                 break;
             case "ResetSelfiPhoto":
+                gamemanager.jaemilangmode.selfifunction.StartSelfi();
                 break;
         }
         gamemanager.ErrorMessage.SetActive(false);
@@ -323,6 +292,7 @@ public class NoticeWindow : MonoBehaviour
         switch (NoticeState)
         {
             case "ResetSelfiPhoto":
+                gamemanager.jaemilangmode.selfifunction.TakePhoto();
                 break;
         }
         gamemanager.ErrorMessage.SetActive(false);

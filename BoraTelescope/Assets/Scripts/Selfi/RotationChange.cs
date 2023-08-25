@@ -7,17 +7,17 @@ public class RotationChange : MonoBehaviour
 {
     public SelfiFunction selfifunc;
 
-    bool changeStart = false;
+    public static bool RotationchangeStart = false;
     Vector3 startTouch;
     Vector3 moveTouch;
     float startrotation;
     float changerotation;
-    public GameObject Imageobj;
+    public static GameObject Imageobj;
 
     // Update is called once per frame
     void Update()
     {
-        if (changeStart == true)
+        if (RotationchangeStart == true)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
@@ -42,7 +42,7 @@ public class RotationChange : MonoBehaviour
     public void SetChange(GameObject obj)
     {
         selfifunc.drawing.enabled = false;
-        changeStart = true;
+        RotationchangeStart = true;
         Imageobj = obj;
         //selfifunc.rotation_obj.color = new Color(1, 1, 1, 1);
         selfifunc.position_obj.raycastTarget = false;
@@ -59,7 +59,7 @@ public class RotationChange : MonoBehaviour
     public void FinishChange()
     {
         selfifunc.SaveUndo(Imageobj.name, Imageobj, "PRS");
-        changeStart = false;
+        RotationchangeStart = false;
         Imageobj = null;
         selfifunc.SelectItem = null;
         //selfifunc.rotation_obj.color = new Color(1, 1, 1, 0);

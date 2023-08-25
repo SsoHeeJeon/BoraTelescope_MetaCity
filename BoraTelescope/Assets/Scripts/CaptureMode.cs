@@ -9,24 +9,15 @@ using UnityEngine.UI;
 public class CaptureMode : ScreenCapture
 {
     public GameObject CaptueObject;
+    public GameObject BackGround;
 
     public static Vector3 originPos;
 
     public static bool CheckStart = false;
-    /*
-    // Update is called once per frame
-    void Update()
-    {
-        if (CheckStart == true)
-        {
-            CheckInternet();
-            CheckStart = false;
-        }
-    }
-    */
+    
     public void CaptureCamera()
     {
-        gamemanager.BackGround.SetActive(true);
+        BackGround.SetActive(true);
         GameManager.InternetConnectState = true;      // 캡처버튼 선택했을 때
         CheckStart = true;
     }
@@ -48,19 +39,19 @@ public class CaptureMode : ScreenCapture
                 if(SelfiFunction.selfistate == SelfiFunction.SelfiState.Download)
                 {
                     customMark.gameObject.SetActive(true);
-
                     SetMark();
                     WaitStartCap();
                 } else if(SelfiFunction.selfistate == SelfiFunction.SelfiState.Take)
                 {
+                    GameManager.InternetConnectState = false;
                     FlashEffect();
                 }
             }
-            gamemanager.BackGround.SetActive(true);
+            BackGround.SetActive(true);
         }
         else if (GameManager.internetCon == false)
         {
-            gamemanager.BackGround.SetActive(false);
+            BackGround.SetActive(false);
             NoticeWindow.NoticeWindowOpen("ErrorInternet");
             //gamemanager.ErrorMessage.SetActive(true);
             CaptureEndCamera();
@@ -78,7 +69,7 @@ public class CaptureMode : ScreenCapture
     {
         customMark.transform.parent = flasheffect.transform.parent.gameObject.transform;
 
-        if (SelfiFunction.selfimode == true && gamemanager.Selfi_Obj.activeSelf)
+        if (SelfiFunction.selfimode == true && gamemanager.selfifunction.Selfi_Obj.activeSelf)
         {
             gamemanager.selfifunction.FinishSelfi();
         }
@@ -88,7 +79,7 @@ public class CaptureMode : ScreenCapture
         customMark.gameObject.SetActive(false);
 
         QRCodeImage.texture = null;
-        gamemanager.BackGround.SetActive(false);
+        gamemanager.jaemilangmode.capturemode.BackGround.SetActive(false);
         CaptueObject.gameObject.SetActive(false);
         GameManager.internetCon = false;
         GameManager.InternetConnectState = false;
@@ -106,15 +97,14 @@ public class CaptureMode : ScreenCapture
 
         originPos = customMark.transform.localPosition;
 
-        //customMark.transform.parent = gamemanager.xrmode.CameraWindow.transform.GetChild(0).gameObject.transform;
-        customMark.transform.localPosition = new Vector3(0, 0.41f);
-        //markcustom.transform.localScale = new Vector3(1.28f, 1.28f, 1.28f);
-        customMark.transform.localScale = new Vector3(0.965f, 0.965f, 0.965f);
+        customMark.transform.parent = gamemanager.selfifunction.PhotoOrigin.transform;
+        customMark.transform.localPosition = new Vector3(0, 0,0);
+        customMark.transform.localScale = new Vector3(1,1,1);
     }
 
     public void waitcapture()
     {
-        //ScreenCapture.startflasheffect = false;
+        ScreenCapture.startflasheffect = false;
         ClickScreenShot();
         ReadyToCapture();
         gamemanager.ButtonClickSound();

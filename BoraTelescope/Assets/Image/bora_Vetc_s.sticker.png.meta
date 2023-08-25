@@ -328,10 +328,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_39
       rect:
         serializedVersion: 2
-        x: 2965
-        y: 2997
-        width: 188
-        height: 432
+        x: 2759
+        y: 2973
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_40
       rect:
         serializedVersion: 2
-        x: 3513
-        y: 3147
-        width: 435
-        height: 104
+        x: 3430
+        y: 2959
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_48
       rect:
         serializedVersion: 2
-        x: 1547
-        y: 2511
-        width: 311
-        height: 290
+        x: 1403
+        y: 2416
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,9 +391,9 @@ TextureImporter:
       name: bora_Vetc_s.sticker_49
       rect:
         serializedVersion: 2
-        x: 2214
+        x: 2082
         y: 2416
-        width: 333
+        width: 600
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -412,10 +412,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_50
       rect:
         serializedVersion: 2
-        x: 2845
-        y: 2440
-        width: 430
-        height: 420
+        x: 2760
+        y: 2410
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +433,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_51
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 2438
-        width: 507
-        height: 438
+        x: 3440
+        y: 2417
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +454,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_52
       rect:
         serializedVersion: 2
-        x: 106
-        y: 2542
-        width: 182
-        height: 179
+        x: 43
+        y: 2416
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,34 +472,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_53
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 2542
-        width: 183
-        height: 179
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbc265740f1e7b660800000000000000
-      internalID: 7401632934711930047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_54
       rect:
         serializedVersion: 2
-        x: 730
-        y: 2544
-        width: 217
-        height: 162
+        x: 720
+        y: 2416
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,76 +493,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_55
-      rect:
-        serializedVersion: 2
-        x: 1081
-        y: 2542
-        width: 229
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f02a30e0b29c6cdb0800000000000000
-      internalID: -4771905568396566001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_56
-      rect:
-        serializedVersion: 2
-        x: 1718
-        y: 2489
-        width: 33
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79f3ad94af631d7f0800000000000000
-      internalID: -589629627600060521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_57
-      rect:
-        serializedVersion: 2
-        x: 1743
-        y: 2491
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30be7c111af4b71f0800000000000000
-      internalID: -1046154935226864893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_58
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1875
-        width: 470
-        height: 419
+        x: 29
+        y: 1845
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,9 +517,9 @@ TextureImporter:
       name: bora_Vetc_s.sticker_59
       rect:
         serializedVersion: 2
-        x: 731
+        x: 702
         y: 1849
-        width: 542
+        width: 600
         height: 487
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -622,10 +538,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_60
       rect:
         serializedVersion: 2
-        x: 1491
-        y: 1918
-        width: 418
-        height: 357
+        x: 1400
+        y: 1856
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,34 +556,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_61
-      rect:
-        serializedVersion: 2
-        x: 3238
-        y: 2237
-        width: 33
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13e5a9a9c09840150800000000000000
-      internalID: 5837941704205426225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_62
       rect:
         serializedVersion: 2
-        x: 3510
-        y: 1947
-        width: 460
-        height: 318
+        x: 3440
+        y: 1856
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,55 +577,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_63
-      rect:
-        serializedVersion: 2
-        x: 1295
-        y: 2202
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5db823f9c9dfaaa30800000000000000
-      internalID: 4227470049368247253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_64
-      rect:
-        serializedVersion: 2
-        x: 3175
-        y: 2177
-        width: 64
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b2ea0255d826e0c0800000000000000
-      internalID: -4546901877114346828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_65
       rect:
         serializedVersion: 2
-        x: 2111
-        y: 2016
-        width: 120
-        height: 168
+        x: 2083
+        y: 1859
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -745,76 +598,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_66
-      rect:
-        serializedVersion: 2
-        x: 2241
-        y: 2012
-        width: 123
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71e74a45813af4010800000000000000
-      internalID: 1175337352661597719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_67
-      rect:
-        serializedVersion: 2
-        x: 2381
-        y: 2016
-        width: 129
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1968da8924d2a76d0800000000000000
-      internalID: -2992029238381672815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_68
-      rect:
-        serializedVersion: 2
-        x: 2511
-        y: 2016
-        width: 143
-        height: 168
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c246323e49d56a60800000000000000
-      internalID: 7666772870541230790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_69
       rect:
         serializedVersion: 2
-        x: 2818
-        y: 1929
-        width: 485
-        height: 245
+        x: 2761
+        y: 1856
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,34 +619,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_70
-      rect:
-        serializedVersion: 2
-        x: 3599
-        y: 1928
-        width: 50
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85560467330497dc0800000000000000
-      internalID: -3640808233980893864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_71
       rect:
         serializedVersion: 2
-        x: 134
-        y: 1344
-        width: 413
-        height: 371
+        x: 40
+        y: 1289
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,10 +643,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_72
       rect:
         serializedVersion: 2
-        x: 829
-        y: 1306
-        width: 411
-        height: 424
+        x: 734
+        y: 1278
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -895,10 +664,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_73
       rect:
         serializedVersion: 2
-        x: 1450
-        y: 1361
-        width: 503
-        height: 291
+        x: 1401
+        y: 1267
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -916,10 +685,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_74
       rect:
         serializedVersion: 2
-        x: 2115
-        y: 1378
-        width: 519
-        height: 298
+        x: 2074
+        y: 1287
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -937,10 +706,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_75
       rect:
         serializedVersion: 2
-        x: 2855
-        y: 1297
-        width: 405
-        height: 414
+        x: 2755
+        y: 1287
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,10 +727,10 @@ TextureImporter:
       name: bora_Vetc_s.sticker_76
       rect:
         serializedVersion: 2
-        x: 3583
-        y: 1362
-        width: 309
-        height: 338
+        x: 3437
+        y: 1291
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,139 +745,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_Vetc_s.sticker_77
-      rect:
-        serializedVersion: 2
-        x: 849
-        y: 1304
-        width: 20
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0266db664a7d5da0800000000000000
-      internalID: -5954468689438416374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_78
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 1303
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 112bfe06e93d247f0800000000000000
-      internalID: -629708320693833199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_79
-      rect:
-        serializedVersion: 2
-        x: 3179
-        y: 1300
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3b57a320d87d3560800000000000000
-      internalID: 7295119806756772670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_80
-      rect:
-        serializedVersion: 2
-        x: 1196
-        y: 1297
-        width: 26
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94b19a6f75840e700800000000000000
-      internalID: 567533095686314825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_81
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 745
-        width: 270
-        height: 439
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 430da39631f9ee010800000000000000
-      internalID: 1220087454782640180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_Vetc_s.sticker_82
-      rect:
-        serializedVersion: 2
-        x: 897
-        y: 735
-        width: 264
-        height: 465
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 640898183e4d4d790800000000000000
-      internalID: -7506140605323837370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_Vetc_s.sticker_83
       rect:
         serializedVersion: 2
-        x: 1512
-        y: 742
-        width: 384
-        height: 456
+        x: 1404
+        y: 730
+        width: 600
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

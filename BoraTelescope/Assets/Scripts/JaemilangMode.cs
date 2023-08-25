@@ -13,18 +13,18 @@ public class JaemilangMode : MonoBehaviour
     public GameObject Jaemilang_background;
     public GameObject Graffiti_background;
 
+    public Sprite Tip_K;
+    public Sprite Tip_E;
+
     // Start is called before the first frame update
     void Start()
     {
         gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         selfifunction.gamemanager = gamemanager;
         capturemode.gamemanager = gamemanager;
-    }
+        gamemanager.selfifunction = selfifunction;
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        gamemanager.UISetting();
     }
 
     public void SelectBackground(GameObject btn)
@@ -32,10 +32,19 @@ public class JaemilangMode : MonoBehaviour
         switch (btn.name)
         {
             case "Live":
+                Liveobj.SetActive(true);
+                Jaemilang_background.SetActive(false);
+                Graffiti_background.SetActive(false);
                 break;
             case "Jaemilang":
+                Liveobj.SetActive(false);
+                Jaemilang_background.SetActive(true);
+                Graffiti_background.SetActive(false);
                 break;
             case "Graffiti":
+                Liveobj.SetActive(false);
+                Jaemilang_background.SetActive(false);
+                Graffiti_background.SetActive(true);
                 break;
         }
     }

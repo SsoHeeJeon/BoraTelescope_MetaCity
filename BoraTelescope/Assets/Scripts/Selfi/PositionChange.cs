@@ -6,17 +6,17 @@ public class PositionChange : MonoBehaviour
 {
     public SelfiFunction selfifunc;
 
-    bool changeStart = false;
+    public static bool PositonchangeStart = false;
     Vector3 startTouch;
     Vector3 moveposition;
     Vector3 changeposition;
-    public GameObject Imageobj;
+    public static GameObject Imageobj;
     Vector3 startposition;
 
     // Update is called once per frame
     void Update()
     {
-        if (changeStart == true)
+        if (PositonchangeStart == true)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
@@ -48,7 +48,7 @@ public class PositionChange : MonoBehaviour
     public void SetChange(GameObject obj)
     {
         selfifunc.drawing.enabled = false;
-        changeStart = true;
+        PositonchangeStart = true;
         Imageobj = obj;
         selfifunc.rotation_obj.gameObject.SetActive(false);
         selfifunc.Scale_obj[0].gameObject.transform.parent.gameObject.SetActive(false);
@@ -63,7 +63,7 @@ public class PositionChange : MonoBehaviour
     public void FinishChange()
     {
         selfifunc.SaveUndo(Imageobj.name, Imageobj, "PRS");
-        changeStart = false;
+        PositonchangeStart = false;
         Imageobj = null;
         selfifunc.SelectItem = null;
         selfifunc.rotation_obj.gameObject.SetActive(true);

@@ -43,11 +43,15 @@ public class ScreenCapture : UploadImage
         GetBoranum();
         //flasheffect.gameObject.SetActive(false);
         counttime = true;
-        //customMark.gameObject.SetActive(true);
-        QRCodeImage.transform.parent.gameObject.SetActive(true);
-        QRCodeImage.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        QRCodeImage.transform.parent.gameObject.transform.GetChild(1).gameObject.SetActive(true);
-        QRCodeImage.transform.parent.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+        
+        if (SelfiFunction.selfimode == true && SelfiFunction.selfistate == SelfiFunction.SelfiState.Download)
+        {
+            //customMark.gameObject.SetActive(true);
+            QRCodeImage.transform.parent.gameObject.SetActive(true);
+            QRCodeImage.transform.parent.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            QRCodeImage.transform.parent.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            QRCodeImage.transform.parent.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+        }
         //flasheffect.gameObject.SetActive(false);
         //startflasheffect = false;
         StartCoroutine(CaptureandSave());
@@ -86,7 +90,7 @@ public class ScreenCapture : UploadImage
             Debug.Log(bytes);
             File.WriteAllBytes(name, bytes);
 
-            gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Capture, "XR_Capture", GetType().ToString());
+            gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Capture, "Jamilang_Capture", GetType().ToString());
 
             if (GameManager.internetCon == true)
             {
@@ -129,6 +133,12 @@ public class ScreenCapture : UploadImage
                 gamemanager.selfifunction.CustomUI.SetActive(false);
                 gamemanager.selfifunction.Download_Btn.SetActive(false);
                 gamemanager.selfifunction.SelfiPhoto.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = gamemanager.selfifunction.SelfiCam;
+
+                for (int index = 0; index < gamemanager.selfifunction.StickerObj.transform.childCount; index++)
+                {
+                    Destroy(gamemanager.selfifunction.StickerObj.transform.GetChild(index).gameObject);
+                }
+
                 //QR생성
                 File.WriteAllBytes(name, bytes);
                 PutImageObject(name, filename);
@@ -155,10 +165,15 @@ public class ScreenCapture : UploadImage
                 gamemanager.selfifunction.CustomUI.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = gamemanager.selfifunction.FinalCam;
                 gamemanager.selfifunction.CustomUI.transform.parent.gameObject.GetComponent<Canvas>().planeDistance = 900;
 
-                gamemanager.selfifunction.PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1344,756);
+                //gamemanager.selfifunction.PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1344,756);
+                gamemanager.selfifunction.PhotoOrigin.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(1920,1080);
+                gamemanager.selfifunction.PhotoOrigin.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+
                 gamemanager.selfifunction.PhotoOrigin.GetComponent<RawImage>().texture = selfiRT;
                 gamemanager.selfifunction.SelfiCam.targetTexture = null;
 
+                gamemanager.jaemilangmode.capturemode.BackGround.SetActive(false);
+                gamemanager.selfifunction.Download_Btn.gameObject.SetActive(false);
                 gamemanager.selfifunction.FinalCam.gameObject.SetActive(true);
                 gamemanager.selfifunction.SelfiCam.gameObject.SetActive(false);
                 gamemanager.selfifunction.PreviewCam.gameObject.SetActive(false);
@@ -166,14 +181,32 @@ public class ScreenCapture : UploadImage
                 gamemanager.selfifunction.PhotoOrigin.gameObject.SetActive(true);
                 gamemanager.selfifunction.PRS.SetActive(false);
                 gamemanager.selfifunction.CustomUI.SetActive(true);
-                gamemanager.selfifunction.Confirm_Btn.SetActive(true);
-                Invoke("CloseBtn", 5f);
+                gamemanager.selfifunction.CustomUI.transform.GetChild(0).gameObject.SetActive(false);
+                gamemanager.selfifunction.ConfirmUI.SetActive(true);
                 gamemanager.selfifunction.SelfiPhoto.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = gamemanager.selfifunction.FinalCam;
-
+                Invoke("CloseBtn", 5f);
+                
+                if (gamemanager.jaemilangmode.Liveobj.activeSelf)
+                {
+                    gamemanager.jaemilangmode.Liveobj.SetActive(false);
+                }
+                else if (gamemanager.jaemilangmode.Jaemilang_background.activeSelf)
+                {
+                    gamemanager.jaemilangmode.Jaemilang_background.SetActive(false);
+                } else if (gamemanager.jaemilangmode.Graffiti_background.activeSelf)
+                {
+                    gamemanager.jaemilangmode.Graffiti_background.SetActive(false);
+                }
+                
                 gamemanager.WriteLog(LogSendServer.NormalLogCode.Selfi_Photo, "Selfi_Photo", GetType().ToString());
                 //Destroy(screenShot);
             }
         }
+    }
+
+    public void CloseBtn()
+    {
+        gamemanager.selfifunction.Confirm_Btn.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public static bool startflasheffect = false;
@@ -202,7 +235,7 @@ public class ScreenCapture : UploadImage
                 {
                     startflasheffect = false;
                     flasheffect.gameObject.SetActive(false);
-                    gamemanager.jaemilangmode.capturemode.WaitStartCap();
+                    //gamemanager.jaemilangmode.capturemode.WaitStartCap();
                 }
             }
             //changed = false;

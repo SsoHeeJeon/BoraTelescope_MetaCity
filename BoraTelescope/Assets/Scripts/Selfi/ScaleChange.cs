@@ -6,11 +6,11 @@ public class ScaleChange : MonoBehaviour
 {
     public SelfiFunction selfifunc;
 
-    public static bool changeStart = false;
+    public static bool ScalechangeStart = false;
     Vector2 startposition;
     Vector2 moveposition;
     float changescale;
-    public GameObject Imageobj;
+    public static GameObject Imageobj;
     float startScale;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class ScaleChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (changeStart == true)
+        if (ScalechangeStart == true)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
@@ -71,7 +71,7 @@ public class ScaleChange : MonoBehaviour
     public void SetChange(GameObject obj)
     {
         selfifunc.drawing.enabled = false;
-        changeStart = true;
+        ScalechangeStart = true;
         Imageobj = obj;
         //selfifunc.Scale_obj.color = new Color(1, 1, 1, 1);
         selfifunc.rotation_obj.gameObject.SetActive(false);
@@ -85,7 +85,7 @@ public class ScaleChange : MonoBehaviour
     public void FinishChange()
     {
         selfifunc.SaveUndo(Imageobj.name, Imageobj, "PRS");
-        changeStart = false;
+        ScalechangeStart = false;
         Imageobj = null;
         selfifunc.SelectItem = null;
         //selfifunc.Scale_obj.color = new Color(1, 1, 1, 1);

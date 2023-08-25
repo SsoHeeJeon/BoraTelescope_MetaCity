@@ -28,7 +28,7 @@ public class ContentsInfo : LogSendServer
             Connect_Button();       // 시스템 컨트롤러 프로그램에 접속하여 모드상태플래그 불러오기
             WriteLog(NormalLogCode.Connect_SystemControl, "Connect_SystemControl_On", GetType().ToString());        // 불러온 모드상태 플래그 로그로 표현
             gamemanager.GetComponent<GameManager>().UISetting();       // UI 셋팅
-            AwakeOnce = true;
+            //AwakeOnce = true;
         }
     }
 
@@ -45,7 +45,7 @@ public class ContentsInfo : LogSendServer
 
                 WriteLog(LogSendServer.NormalLogCode.Load_ResourceFile, "Load_ResourceFile", GetType().ToString());
                 GameManager.MainMode = "CartoonMode";
-
+                gamemanager.uilang = gamemanager.MenuBar.transform.GetChild(1).gameObject.GetComponent<UILanguage>();
                 //ModeActive = new bool[BasicLabel.ModeActive.Length];
                 break;
             case "Jaemilang":
@@ -53,7 +53,7 @@ public class ContentsInfo : LogSendServer
 
                 WriteLog(LogSendServer.NormalLogCode.Load_ResourceFile, "Load_ResourceFile", GetType().ToString());
                 GameManager.MainMode = "JaemilangMode";
-
+                gamemanager.uilang = gamemanager.MenuBar.transform.GetChild(0).gameObject.GetComponent<UILanguage>();
                 //ModeActive = new bool[ApsanLabel.ModeActive.Length];
                 break;
         }

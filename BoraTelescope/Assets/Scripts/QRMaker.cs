@@ -106,7 +106,7 @@ public class QRMaker : MonoBehaviour
         QRCodeImage.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         QRCodeImage.gameObject.SetActive(false);
         QRCodeImage.transform.parent.gameObject.SetActive(false);
-        gamemanager.BackGround.SetActive(false);
+        gamemanager.jaemilangmode.capturemode.BackGround.SetActive(false);
     }
 
     public void QRCloseLog()

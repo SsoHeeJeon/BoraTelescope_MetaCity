@@ -12,7 +12,7 @@ public class Drawing : MonoBehaviour
     public Material Pen_Red; //Material for Line Renderer
     public Material Pen_Orange; //Material for Line Renderer
     public Material Pen_Yellow; //Material for Line Renderer
-    public Material Pen_Lightgreen; //Material for Line Renderer
+    public Material Pen_LightGreen; //Material for Line Renderer
     public Material Pen_Green; //Material for Line Renderer
     public Material Pen_LightBlue; //Material for Line Renderer
     public Material Pen_Blue; //Material for Line Renderer
@@ -42,9 +42,15 @@ public class Drawing : MonoBehaviour
         {
             mousePos = selfifunction.FinalCam.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 3f));
 
+            Debug.Log(mousePos.x + " / " + mousePos.y);
+
+
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                createLine(mousePos);
+                //if (mousePos.y > -175)
+                {
+                    createLine(mousePos);
+                }
             }
             else if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
@@ -100,17 +106,22 @@ public class Drawing : MonoBehaviour
         GameObject line = Instantiate(LineBase);
         line.name = "Line_" + SelfiFunction.s1;
         LineRenderer lineRend = line.GetComponent<LineRenderer>();
-        line.layer = 11;
+        line.layer = 10;
         if (SelectColor == null)
         {
             SelectColor = Pen_White;
         }
 
+        if (selfifunction.SelectPenImg.gameObject.activeSelf)
+        {
+            selfifunction.SelectPenImg.gameObject.SetActive(false);
+        }
+        
         if(selfifunction.FinalCam.transform.childCount == 0)
         {
             layercount = 0;
         }
-
+        
         line.transform.parent = selfifunction.FinalCam.transform;
         line.transform.position = mousePos;
 
@@ -122,6 +133,10 @@ public class Drawing : MonoBehaviour
 
         SelfiFunction.s1 += 1;
         lineRend.sortingOrder = SelfiFunction.s1;
+
+        lineRend.SetPosition(0, new Vector3(mousePos.x, mousePos.y, 480 - SelfiFunction.s1));
+        lineRend.SetPosition(1, new Vector3(mousePos.x, mousePos.y, 480 - SelfiFunction.s1));
+        /*
         if (SceneManager.GetActiveScene().name.Contains("XRMode"))
         {
             lineRend.SetPosition(0, new Vector3(mousePos.x, mousePos.y, 480 - SelfiFunction.s1));
@@ -131,24 +146,28 @@ public class Drawing : MonoBehaviour
             lineRend.SetPosition(0, new Vector3(mousePos.x, mousePos.y, -1180 - SelfiFunction.s1));
             lineRend.SetPosition(1, new Vector3(mousePos.x, mousePos.y, -1180 - SelfiFunction.s1));
         }
-
+        */
         curLine = lineRend;
     }
 
     void connectLine(Vector3 mousePos)
     {
-        if (PrevPos != null && Mathf.Abs(Vector3.Distance(PrevPos, mousePos)) >= 0.001f)
+        if (PrevPos != null && Mathf.Abs(Vector3.Distance(PrevPos, mousePos)) >= 0.0001f)
         {
             PrevPos = mousePos;
             positionCount++;
             curLine.positionCount = positionCount;
+
+            curLine.SetPosition(positionCount - 1, new Vector3(mousePos.x, mousePos.y, 480 - SelfiFunction.s1));
+
+            /*
             if (SceneManager.GetActiveScene().name.Contains("XRMode"))
             {
                 curLine.SetPosition(positionCount - 1, new Vector3(mousePos.x, mousePos.y, 480 - SelfiFunction.s1));
             } else if (SceneManager.GetActiveScene().name.Contains("ClearMode"))
             {
                 curLine.SetPosition(positionCount - 1, new Vector3(mousePos.x, mousePos.y, -1180 - SelfiFunction.s1));
-            }
+            }*/
         }
 
     }
