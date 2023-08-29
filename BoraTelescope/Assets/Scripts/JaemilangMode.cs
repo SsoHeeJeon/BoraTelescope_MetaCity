@@ -7,6 +7,7 @@ public class JaemilangMode : MonoBehaviour
     public GameManager gamemanager;
     public SelfiFunction selfifunction;
     public CaptureMode capturemode;
+    public AutoStreaming autostreaming;
     public GameObject CaptueObject;
 
     public GameObject Liveobj;
@@ -23,8 +24,11 @@ public class JaemilangMode : MonoBehaviour
         selfifunction.gamemanager = gamemanager;
         capturemode.gamemanager = gamemanager;
         gamemanager.selfifunction = selfifunction;
+        autostreaming.gamemanager = gamemanager;
 
         gamemanager.UISetting();
+
+        autostreaming.makefile();
     }
 
     public void SelectBackground(GameObject btn)

@@ -55,6 +55,7 @@ public class GameManager : ContentsInfo
     public bool alreadywaitingLog = false;
     public static bool AnyError = false;
     public static bool MoveVisit = false;
+    public bool WriteLogStart = false;
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +110,60 @@ public class GameManager : ContentsInfo
             SelectLanguageChange();
         }
 
+        // 터치 안하는 시간을 측정하여 대기모드로 전환하기 위함
+        if (Input.GetMouseButtonDown(0))        // 마우스 클릭시
+        {
+            touchCount = 0;
+            touchfinish = true;
+        }
+        else if (Input.GetMouseButtonUp(0))     // 마우스 버튼에서 떼면
+        {
+            touchfinish = false;
+        }
+
+        // 터치를 안하고 있고 현재 씬이 대기모드가 아니라면
+        // 터치 안한지 5분(데모기준) 이 되는 시간에 대기모드로 전환
+        //if (touchfinish == false && SceneManager.GetActiveScene().name != "WaitingMode" && FunctionCustom.SetPayment == false)
+        if (!(SceneManager.GetActiveScene().name == "WaitingMode" || SceneManager.GetActiveScene().name == "Loading"))
+        {
+            // 터치 안하는 시간을 측정하여 대기모드로 전환하기 위함
+            if (Input.GetMouseButtonDown(0) || Input.touchCount >= 1)        // 마우스 클릭시
+            {
+                touchCount = 0;
+                touchfinish = true;
+            }
+            else if (Input.GetMouseButtonUp(0) || Input.touchCount == 0)     // 마우스 버튼에서 떼면
+            {
+                touchfinish = false;
+            }
+
+            if (touchCount < waitingTime + 10)
+            {
+                touchCount += Time.deltaTime;
+            }
+
+            if ((int)touchCount >= waitingTime)
+            {
+                //Readpulse = false;
+                touchCount = 0;
+                Debug.Log("today waiting");
+                Loading.nextScene = "WaitingMode";
+                SceneManager.LoadScene("WaitingMode");
+            }
+            else if ((int)touchCount >= 60 && (int)touchCount < 61)
+            {
+                if (!Tip_Obj.gameObject.activeSelf)
+                {
+                    if (WriteLogStart == false)
+                    {
+                        gamemanager.WriteLog(LogSendServer.NormalLogCode.ClickHomeBtn, "Reset All Function", GetType().ToString());
+                        WriteLogStart = true;
+                    }
+                    ClickHome();
+                }
+            }
+        }
+
         if (Input.GetKeyDown("a"))
         {
             OnApplicationQuit();
@@ -121,6 +176,7 @@ public class GameManager : ContentsInfo
     {
         AwakeOnce = false;
         WriteLog(NormalLogCode.Connect_SystemControl, "Connect_SystemControl_Off", GetType().ToString());
+        jaemilangmode.autostreaming.FinishStream();
         selfifunction.selfilightcontrol.LightOff();
         Disconnect_Button();
     }
@@ -216,6 +272,8 @@ public class GameManager : ContentsInfo
                     }
                     MenuBar.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
+                    WriteLog(NormalLogCode.ChangeMode, "ChangeMode : Start(" + PrevMode + " - " + "JaemilangMode)", GetType().ToString());
+
                     Loading.nextScene = "JaemilangMode";
                     SceneManager.LoadScene("Loading");
                 }
@@ -226,11 +284,13 @@ public class GameManager : ContentsInfo
                     if (!GuideMode.activeSelf)
                     {
                         MenuBar.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                        WriteLog(NormalLogCode.ChangeMode, "GuideMode Open", GetType().ToString());
                         GuideMode.SetActive(true);
                     }
                     else if (GuideMode.activeSelf)
                     {
                         MenuBar.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                        WriteLog(NormalLogCode.ChangeMode, "GuideMode Off", GetType().ToString());
                         GuideMode.SetActive(false);
                     }
                 }
@@ -268,6 +328,10 @@ public class GameManager : ContentsInfo
                             MenuBar.transform.GetChild(0).gameObject.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
                         }
                         MenuBar.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
+                        jaemilangmode.autostreaming.FinishStream();
+
+                        WriteLog(NormalLogCode.ChangeMode, "ChangeMode : Start(" + PrevMode + " - " + "VisitMode)", GetType().ToString());
 
                         Loading.nextScene = "VisitMode";
                         SceneManager.LoadScene("Loading");

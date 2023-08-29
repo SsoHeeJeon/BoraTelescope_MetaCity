@@ -46,7 +46,9 @@ public class LogSendServer : bora_client_test
 
         Jaemilang_Start = 3001,
         Jamilang_Capture = 3002,
+        Jamilang_Streaming = 3003,
         Jamilang_QRCode = 3005,
+
 
         Visit_Start = 5011,
         Visit_See = 5012,
