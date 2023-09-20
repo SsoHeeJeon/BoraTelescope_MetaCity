@@ -64,7 +64,8 @@ public class LogSendServer : bora_client_test
         Selfi_Download = 5021,
         Selfi_RePhoto = 5022,
         Selfi_Cancel = 5023,
-        Selfi_QRCode = 5024
+        Selfi_QRCode = 5024,
+        selfi_LightControl = 5025
     }
     public NormalLogCode lognum;
 
@@ -72,12 +73,13 @@ public class LogSendServer : bora_client_test
     {
         DisConnect_SystemControl = 1001,
         Fail_Connect_Camera = 1003,
+        UnLoad_Jsonfile = 1004,
         UnLoad_ResourceFile = 1005,
         Fail_ChangeMode = 1006,
         Fail_ImageUpload = 1007,
         Fail_ImageListConfirm = 1008,
         Fail_EnterMode = 1009,
-        Fail_EtcPantilt = 1010,
+        Fail_LightControl = 1010,
         Fail_RecordUpload = 1011,
         Fail_QRUpload = 1013,
         Fail_InternetConnect = 1014,

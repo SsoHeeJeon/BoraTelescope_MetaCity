@@ -64,7 +64,7 @@ public class AutoStreaming : MonoBehaviour
         SeeOutput.Add(_ClientProcess.StandardOutput.ReadLine());
 
         gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Streaming, "Input m3u8 Make ts File", GetType().ToString());
-        _ClientProcess.StandardInput.WriteLine($"ffmpeg -i https://0678e6374a55.ap-northeast-2.playback.live-video.net/api/video/v1/ap-northeast-2.975933023183.channel.yk0CZzcz9ARu.m3u8 -c copy output.ts");
+        //_ClientProcess.StandardInput.WriteLine($"ffmpeg -i https://0678e6374a55.ap-northeast-2.playback.live-video.net/api/video/v1/ap-northeast-2.975933023183.channel.yk0CZzcz9ARu.m3u8 -c copy output.ts");
 
         gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Streaming, "Get tSFile", GetType().ToString());
     }
@@ -81,7 +81,7 @@ public class AutoStreaming : MonoBehaviour
                     Debug.Log("yes");
                     gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Streaming, "confirm TSFile Start", GetType().ToString());
 
-                    this.gameObject.GetComponent<MinimalPlayback>().path = "C:/ffmpeg-5.0.1-full_build/bin/output.ts";
+                    //this.gameObject.GetComponent<MinimalPlayback>().path = "C:/ffmpeg-5.0.1-full_build/bin/output.ts";
 
                     //Debug.Log(this.gameObject.GetComponent<MinimalPlayback>().path);
                     gamemanager.WriteLog(GameManager.NormalLogCode.Jamilang_Streaming, "VideoPlayer Connect", GetType().ToString());
@@ -95,7 +95,8 @@ public class AutoStreaming : MonoBehaviour
                     Debug.Log("yes");
                     gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Streaming, "confirm TSFile Start", GetType().ToString());
 
-                    this.gameObject.GetComponent<MinimalPlayback>().path = "D:/Project/BORA/ffmpeg-5.0.1-full_build/ffmpeg-5.0.1-full_build/bin/output.ts";
+                    //this.gameObject.GetComponent<MinimalPlayback>().path = "D:/Project/BORA/ffmpeg-5.0.1-full_build/ffmpeg-5.0.1-full_build/bin/output.ts";
+                    //this.gameObject.GetComponent<MinimalPlayback>().path = "rtsp://admin:Bora7178@59.8.77.111/00/profile2/media.smp";
 
                     //Debug.Log(this.gameObject.GetComponent<MinimalPlayback>().path);
                     gamemanager.WriteLog(GameManager.NormalLogCode.Jamilang_Streaming, "VideoPlayer Connect", GetType().ToString());
@@ -123,7 +124,7 @@ public class AutoStreaming : MonoBehaviour
         gamemanager.WriteLog(LogSendServer.NormalLogCode.Jamilang_Streaming, tsfilelenth.Length.ToString(), GetType().ToString());
         if (tsfilelenth.Length != 0)
         {
-            this.gameObject.GetComponent<MinimalPlayback>().ReadyPlay();
+            //this.gameObject.GetComponent<MinimalPlayback>().ReadyPlay();
             gamemanager.WriteLog(GameManager.NormalLogCode.Jamilang_Streaming, "VideoPlayer Size Check", GetType().ToString());
             //gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, this.gameObject.GetComponent<MPMP>().IsLoading().ToString(), GetType().ToString());
         }
@@ -132,7 +133,7 @@ public class AutoStreaming : MonoBehaviour
             Invoke("LoadandPlay", 0.8f);
         }
     }
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -141,7 +142,7 @@ public class AutoStreaming : MonoBehaviour
             MaketsFIle();
         }
     }
-
+    */
     public void FinishStream()
     {
         this.gameObject.GetComponent<MinimalPlayback>().Stop();
@@ -168,7 +169,7 @@ public class AutoStreaming : MonoBehaviour
         Debug.Log(_ClientProcess_f.StandardOutput.ReadLine());
         Debug.Log(_ClientProcess_f.StandardOutput.ReadLine());
 
-        this.gameObject.GetComponent<MinimalPlayback>().path = "";
+        //this.gameObject.GetComponent<MinimalPlayback>().path = "";
 
         _ClientProcess_f.Kill();
         gamemanager.WriteLog(GameManager.NormalLogCode.Jamilang_Streaming, "Finish LiveStreaming", GetType().ToString());

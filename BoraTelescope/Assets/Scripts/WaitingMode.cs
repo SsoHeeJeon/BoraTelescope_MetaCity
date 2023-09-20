@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
@@ -10,6 +11,8 @@ public class WaitingMode : MonoBehaviour
     public VideoPlayer BackGround_Video;
     private int videonum;
     private bool SeeVideo = false;
+    public Text DateT;
+    public Text TimeT;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,38 @@ public class WaitingMode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DateT.text = System.DateTime.Now.ToString("yyyy.MM.dd ");
+        switch (System.DateTime.Now.ToString("ddd"))
+        {
+            /*
+            case "월":
+                DateT.text += "Mon";
+                break;
+            case "화":
+                DateT.text += "Tue";
+                break;
+            case "수":
+                DateT.text += "Wed";
+                break;
+            case "목":
+                DateT.text += "Thu";
+                break;
+            case "금":
+                DateT.text += "Fri";
+                break;
+            case "토":
+                DateT.text += "Sat";
+                break;
+            case "일":
+                DateT.text += "Sun";
+                break;*/
+            default:
+                DateT.text += System.DateTime.Now.ToString("ddd");
+                break;
+        }
+
+        TimeT.text = System.DateTime.Now.ToString("HH:mm");
+
         if (BackGround_Video.isPlaying == false && SeeVideo == false)
         {
             LoadViedo();

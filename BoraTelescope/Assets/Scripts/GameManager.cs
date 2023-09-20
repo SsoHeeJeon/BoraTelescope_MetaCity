@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using HtmlAgilityPack;
+using System;
+using System.Text;
+using UnityEngine.Networking;
 
 public class GameManager : ContentsInfo
 {
@@ -32,13 +36,11 @@ public class GameManager : ContentsInfo
     public GameObject GuideMode;
 
     public GameObject Selfi_Obj;
+    public Text Degree;
+    public Text Date;
 
     public AudioSource ButtonEffect;
     public AudioClip ButtonSound;
-
-    public float langnavi_t;
-    public bool movelangNavi = false;
-    public bool langNaviOn = false;
 
     public static float waitingTime = 300;
     string ManagerModePassword = "025697178";
@@ -76,18 +78,12 @@ public class GameManager : ContentsInfo
             LanguageBtn = MenuBar.transform.GetChild(1).gameObject.GetComponent<UILanguage>().Language_Btn.gameObject;
         }
 
-        // 언어선택창 닫아놓기(로딩화면에서 안보임.)
-        LangRect.sizeDelta = new Vector2(barClose, 1080);
-        LangChildImg.fillAmount = 0;
-        LanguageBar.transform.GetChild(0).gameObject.SetActive(false);
-        langNaviOn = false;
-        movelangNavi = false;
-
         // 시간 초기화
         touchCount = 0;
         touchfinish = false;
         UITouch = false;
-        langnavi_t = 0;
+
+        StartCoroutine(GetWeather("Seoul"));
     }
 
     // Update is called once per frame
@@ -102,12 +98,6 @@ public class GameManager : ContentsInfo
                 jaemilangmode.capturemode.CheckInternet();
                 CaptureMode.CheckStart = false;
             }
-        }
-
-        langnavi_t += Time.deltaTime * 0.1f;
-        if (movelangNavi == true)
-        {
-            SelectLanguageChange();
         }
 
         // 터치 안하는 시간을 측정하여 대기모드로 전환하기 위함
@@ -164,6 +154,8 @@ public class GameManager : ContentsInfo
             }
         }
 
+        WriteDegree();
+
         if (Input.GetKeyDown("a"))
         {
             OnApplicationQuit();
@@ -176,8 +168,11 @@ public class GameManager : ContentsInfo
     {
         AwakeOnce = false;
         WriteLog(NormalLogCode.Connect_SystemControl, "Connect_SystemControl_Off", GetType().ToString());
-        jaemilangmode.autostreaming.FinishStream();
-        selfifunction.selfilightcontrol.LightOff();
+        jaemilangmode.minimalplayback.Stop();
+        if (GameManager.AnyError == false)
+        {
+            selfifunction.selfilightcontrol.LightOff();
+        }
         Disconnect_Button();
     }
 
@@ -192,6 +187,8 @@ public class GameManager : ContentsInfo
                 MenuBar.transform.GetChild(1).gameObject.SetActive(false);
 
                 jaemilangmode.selfifunction.Selfi_Obj.SetActive(false);
+
+                gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "UI Setting " + UI_All.activeSelf, GetType().ToString());
                 break;
             case "CartoonMode":
                 cartoonmode = GameObject.Find("CartoonMode").GetComponent<CartoonMode>();
@@ -329,9 +326,9 @@ public class GameManager : ContentsInfo
                         }
                         MenuBar.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
-                        jaemilangmode.autostreaming.FinishStream();
+                        jaemilangmode.minimalplayback.Stop();
 
-                        WriteLog(NormalLogCode.ChangeMode, "ChangeMode : Start(" + PrevMode + " - " + "VisitMode)", GetType().ToString());
+                        WriteLog(NormalLogCode.ChangeMode, "ChangeMode : Start(JaemilangMode - VisitMode)", GetType().ToString());
 
                         Loading.nextScene = "VisitMode";
                         SceneManager.LoadScene("Loading");
@@ -339,21 +336,7 @@ public class GameManager : ContentsInfo
                 }
                 break;
             case "Language":
-                langnavi_t = 0;
-                if (LangRect.sizeDelta.x > barClose)        // 언어선택 비활성화
-                {
-                    LanguageBtn.transform.GetChild(0).gameObject.SetActive(false);
-                    //langnavi_t = 0;
-                    langNaviOn = true;
-                    movelangNavi = true;
-                }
-                else if (LangRect.sizeDelta.x < barOpen)      // 언어선택 활성화
-                {
-                    LanguageBtn.transform.GetChild(0).gameObject.SetActive(true);
-                    //langnavi_t = 0;
-                    movelangNavi = true;
-                    langNaviOn = false;
-                }
+                LanguageBar.SetActive(true);
                 break;
             case "Tip":
                 if (!Tip_Obj.activeSelf)
@@ -428,12 +411,85 @@ public class GameManager : ContentsInfo
             case "Live":
                 break;
             case "LangNavi_Close":
-                langnavi_t = 0;
-                movelangNavi = true;
+                LanguageBar.SetActive(false);
 
                 LanguageBtn.transform.GetChild(0).gameObject.SetActive(false);
                 break;
         }
+    }
+
+    string mintext;
+
+    public void WriteDegree()
+    {
+        if (System.DateTime.Now.ToString("tt") == "오전")
+        {
+            Date.text = "am ";
+            Date.text += System.DateTime.Now.ToString("hh:mm");
+        }
+        else if (System.DateTime.Now.ToString("tt") == "오후")
+        {
+            Date.text = "pm ";
+            Date.text += System.DateTime.Now.ToString("hh:mm");
+        }
+        else
+        {
+            Date.text = System.DateTime.Now.ToString("tt hh:mm");
+        }
+
+        //string url = "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%AA%85%EB%8F%99+%EA%B8%B0%EC%98%A8&oquery=%EA%B8%B0%EC%98%A8&tqi=in8aclp0J1sssUUVUPNsssssse8-117799";
+        //HtmlWeb web = new HtmlWeb();
+        //web.OverrideEncoding = System.Text.Encoding.UTF8;
+        //HtmlDocument htmlDoc = web.Load(url);
+
+        //if (Date.text.Substring(6) != System.DateTime.Now.ToString("mm"))
+        //{
+        //    var CurWeather = htmlDoc.DocumentNode.SelectSingleNode("*[@id=\"main_pack\"]/section[1]/div[1]/div[2]/div[1]/div[1]/div/div[2]/div/div[1]/div[1]/div[2]/strong/text()");
+        //    Degree.text = CurWeather.InnerText + "℃";
+        //}
+        //if (mintext != System.DateTime.Now.ToString("mm"))
+        //{
+        //    StartCoroutine(GetWeather("Seoul"));
+            ////string url = "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%84%9C%EC%9A%B8+%EB%82%A0%EC%94%A8&oquery=%EA%B8%B0%EC%83%81%EC%B2%AD&tqi=iM1Gjwp0YidssRSoQ8Kssssst78-002538";
+            //string url = "https://www.google.com/search?q=%EB%AA%85%EB%8F%99%EB%82%A0%EC%94%A8&oq=%EB%AA%85%EB%8F%99%EB%82%A0%EC%94%A8&aqs=chrome..69i57.6002j1j4&sourceid=chrome&ie=UTF-8";
+            //HtmlWeb web = new HtmlWeb();
+            //web.OverrideEncoding = Encoding.UTF8;
+            //HtmlDocument htmlDoc = web.Load(url);
+            //HtmlNode SearchCount = htmlDoc.DocumentNode.SelectSingleNode("//*[@id=\"wob_tm\"]");
+            //Debug.Log(SearchCount);
+            ////HtmlNode SearchCount = htmlDoc.DocumentNode.SelectSingleNode("//*[@id=\"main_pack\"]/section[1]/div[1]/div[2]/div[1]/div[1]/div/div[2]/div/div[1]/div[1]/div[2]/strong/text()");
+            //try
+            //{
+            //    Degree.text = SearchCount.InnerText + "℃";
+            //}
+            //catch
+            //{
+
+            //}
+            //mintext = System.DateTime.Now.ToString("mm");
+        //}
+    }
+
+    public WeatherData weatherInfo;
+
+    IEnumerator GetWeather(string city)
+    {
+        city = UnityWebRequest.EscapeURL(city);
+        string url = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&units=metric&appid=0bf0abd508d5b27f11cdf4e3f9d55de0";
+
+        UnityWebRequest www = UnityWebRequest.Get(url);
+        yield return www.SendWebRequest();
+
+        string json = www.downloadHandler.text;
+        json = json.Replace("\"base\":", "\"basem\":");
+        weatherInfo = JsonUtility.FromJson<WeatherData>(json);
+
+        if (weatherInfo.weather.Length > 0)
+        {
+            Degree.text = weatherInfo.main.temp.ToString() + "℃";
+            //Degree.text = weatherInfo.weather[0].main;
+        }
+
     }
 
     /// <summary>
@@ -441,42 +497,7 @@ public class GameManager : ContentsInfo
     /// </summary>
     public void SelectLanguageChange()
     {
-        if (langNaviOn == true)     // 언어선택 창 비활성화
-        {
-            // 언어선택 창 비활성화 진행
-            if (LangRect.sizeDelta.x > barClose)
-            {
-                LangRect.sizeDelta = Vector2.Lerp(LangRect.sizeDelta, new Vector2(barClose - 5f, 1080), langnavi_t);
-                LangChildImg.fillAmount -= 0.5f * langnavi_t;
-            }
-            else if (LangRect.sizeDelta.x <= barClose)
-            {
-                LangRect.sizeDelta = new Vector2(barClose, 1080);
-                LangChildImg.fillAmount = 0;
-                LanguageBar.transform.GetChild(0).gameObject.SetActive(false);
-                LanguageBtn.transform.GetChild(0).gameObject.SetActive(false);
-                langNaviOn = false;
-                movelangNavi = false;
-            }
-        }
-        else if (langNaviOn == false)       // 언어선택 활성화
-        {
-            LanguageBar.transform.GetChild(0).gameObject.SetActive(true);       // 언어선택 창 활성화
-            if (LangRect.sizeDelta.x < barOpen)
-            {
-                LangRect.sizeDelta = Vector2.Lerp(LangRect.sizeDelta, new Vector2(barOpen + 5f, 1080), langnavi_t);
-                LangChildImg.fillAmount += 0.5f * langnavi_t;
-            }
-            else if (LangRect.sizeDelta.x >= barOpen)
-            {
-                //LanguageBar.gameObject.SetActive(true);
-                LanguageBar.transform.GetChild(0).gameObject.SetActive(true);
-                LangRect.sizeDelta = new Vector2(barOpen, 1080);
-                LangChildImg.fillAmount = 1;
-                langNaviOn = true;
-                movelangNavi = false;
-            }
-        }
+        LanguageBar.SetActive(true);
     }
 
     /// <summary>
@@ -490,20 +511,20 @@ public class GameManager : ContentsInfo
             case "Korea":
                 currentLang = Language_enum.Korea;
                 uilang.SelectKorea();
-                Tip_Obj.GetComponent<Image>().sprite = jaemilangmode.Tip_K;
+                btn.transform.GetChild(0).gameObject.SetActive(true);
+                btn.transform.parent.GetChild(1).GetChild(0).gameObject.SetActive(false);
                 break;
             case "English":
                 currentLang = Language_enum.English;
                 uilang.NotSelectKorea();
-                Tip_Obj.GetComponent<Image>().sprite = jaemilangmode.Tip_E;
+
+                btn.transform.GetChild(0).gameObject.SetActive(true);
+                btn.transform.parent.GetChild(0).GetChild(0).gameObject.SetActive(false);
                 break;
         }
 
         WriteLog(NormalLogCode.ChangeLanguage, "ChangeLanguage : " + currentLang, GetType().ToString());
 
-        langnavi_t = 0;
-        langNaviOn = true;
-        movelangNavi = true;
         LanguageBtn.transform.GetChild(0).gameObject.SetActive(false);
 
         if (Tip_Obj.activeSelf)

@@ -8,7 +8,7 @@ using System;
 using System.Threading;
 using System.Net;
 
-public class bora_client_test : ReceiveServer
+public class bora_client_test : MonoBehaviour
 {
     TcpClient client = null; // 서버 접속을 위한 client 소켓 생성
     StreamReader reader = null;
@@ -58,7 +58,7 @@ public class bora_client_test : ReceiveServer
                 // 모드 상태 플래그 값 저장 //
                 //mode_status_flag_string.text = dateFromReceive;
                 ContentsInfo.ContentsVersion = splitMsg[0];
-                SceneOnOff(splitMsg[1]);
+                //SceneOnOff(splitMsg[1]);
             }
             catch (Exception ex) // 서버로 송신이 안될 때 에러 발생
             {
@@ -207,8 +207,8 @@ public class bora_client_test : ReceiveServer
 
                         // 모드 상태 플래그 값 저장 //
                         //mode_status_flag_string.text = splitStr[1];
-                        Debug.Log(splitStr[1]);
-                        SceneOnOff(splitStr[1]);
+                        //Debug.Log(splitStr[1]);
+                        //SceneOnOff(splitStr[1]);
                         writer.WriteLine("모드 상태 플래그 값 수신 완료"); // 시스템 컨트롤러 클라이언트에게 수신 완료 확인 보내기
                         clientsocket.Close(); //클라이언트 접속이 끊키면 소켓을 닫는다.
                         Debug.Log("보라 프로그램 수신 대기 서버 정상 종료");

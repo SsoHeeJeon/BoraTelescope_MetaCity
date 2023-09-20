@@ -7,15 +7,19 @@ using UnityEngine.UI;
 /// for libvlcsharp usage documentation, please visit https://code.videolan.org/videolan/LibVLCSharp/-/blob/master/docs/home.md
 public class MinimalPlayback : MonoBehaviour
 {
+    public GameManager gamemanager;
+    public RawImage Streaming;
+    public GameObject ReadyImg;
+
     LibVLC _libVLC;
     MediaPlayer _mediaPlayer;
     const int seekTimeDelta = 5000;
     Texture2D tex = null;
     bool playing;
-    public string path;
+    public static string path;
     public string path_1;
 
-    public void ReadyPlay()
+    public void Start()
     {
         Core.Initialize(Application.dataPath);
 
@@ -67,9 +71,9 @@ public class MinimalPlayback : MonoBehaviour
             if(_mediaPlayer.Media == null)
             {
                 // playing remote media
-                //_mediaPlayer.Media = new Media(_libVLC, new Uri("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"));
-                var trimmedPath = path.Trim(new char[] { '"' });//Windows likes to copy paths with quotes but Uri does not like to open them
-                _mediaPlayer.Media = new Media(_libVLC, new Uri(trimmedPath));
+                _mediaPlayer.Media = new Media(_libVLC, new Uri(path));    // url 변경 필요
+                //var trimmedPath = path.Trim(new char[] { '"' });//Windows likes to copy paths with quotes but Uri does not like to open them
+                //_mediaPlayer.Media = new Media(_libVLC, new Uri(trimmedPath));
             }
 
             _mediaPlayer.Play();
@@ -89,7 +93,7 @@ public class MinimalPlayback : MonoBehaviour
         // _mediaPlayer = null;
         //GetComponent<RawImage>().texture = null;
         //GetComponent<Renderer>().material.mainTexture = null;
-        this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = null;
+        //this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = null;
         tex = null;
     }
 
@@ -99,6 +103,7 @@ public class MinimalPlayback : MonoBehaviour
 
         if (tex == null)
         {
+            ReadyImg.SetActive(true);
             // If received size is not null, it and scale the texture
             uint i_videoHeight = 0;
             uint i_videoWidth = 0;
@@ -114,9 +119,9 @@ public class MinimalPlayback : MonoBehaviour
                     false,
                     true,
                     texptr);
-                //GetComponent<RawImage>().texture = tex;
+                Streaming.texture = tex;
                 //GetComponent<Renderer>().material.mainTexture = tex;
-                this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = tex;
+                //this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = tex;
             }
         }
         else if (tex != null)
@@ -125,10 +130,23 @@ public class MinimalPlayback : MonoBehaviour
             if (updated)
             {
                 tex.UpdateExternalTexture(texptr);
-                //GetComponent<RawImage>().texture = tex;
+                Streaming.texture = tex;
                 //GetComponent<Renderer>().material.mainTexture = tex;
-                this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = tex;
+                //this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = tex;
+
+                if (ReadyImg.activeSelf)
+                {
+                    Invoke("WaitReady", 0.8f);
+                }
             }
+        }
+    }
+
+    public void WaitReady()
+    {
+        if (ReadyImg.activeSelf)
+        {
+            ReadyImg.SetActive(false);
         }
     }
 }

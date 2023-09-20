@@ -7,7 +7,7 @@ public class JaemilangMode : MonoBehaviour
     public GameManager gamemanager;
     public SelfiFunction selfifunction;
     public CaptureMode capturemode;
-    public AutoStreaming autostreaming;
+    public MinimalPlayback minimalplayback;
     public GameObject CaptueObject;
 
     public GameObject Liveobj;
@@ -24,11 +24,13 @@ public class JaemilangMode : MonoBehaviour
         selfifunction.gamemanager = gamemanager;
         capturemode.gamemanager = gamemanager;
         gamemanager.selfifunction = selfifunction;
-        autostreaming.gamemanager = gamemanager;
+        minimalplayback.gamemanager = gamemanager;
+
+        minimalplayback.ReadyImg.SetActive(true);
 
         gamemanager.UISetting();
-
-        autostreaming.makefile();
+        gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "Start JaemilangMode", GetType().ToString());
+        //autostreaming.makefile();
     }
 
     public void SelectBackground(GameObject btn)
@@ -39,16 +41,31 @@ public class JaemilangMode : MonoBehaviour
                 Liveobj.SetActive(true);
                 Jaemilang_background.SetActive(false);
                 Graffiti_background.SetActive(false);
+                for (int index = 0; index < btn.transform.parent.childCount; index++)
+                {
+                    btn.transform.parent.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                }
+                btn.transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case "Jaemilang":
                 Liveobj.SetActive(false);
                 Jaemilang_background.SetActive(true);
                 Graffiti_background.SetActive(false);
+                for (int index = 0; index < btn.transform.parent.childCount; index++)
+                {
+                    btn.transform.parent.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                }
+                btn.transform.GetChild(0).gameObject.SetActive(true);
                 break;
             case "Graffiti":
                 Liveobj.SetActive(false);
                 Jaemilang_background.SetActive(false);
                 Graffiti_background.SetActive(true);
+                for (int index = 0; index < btn.transform.parent.childCount; index++)
+                {
+                    btn.transform.parent.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                }
+                btn.transform.GetChild(0).gameObject.SetActive(true);
                 break;
         }
     }

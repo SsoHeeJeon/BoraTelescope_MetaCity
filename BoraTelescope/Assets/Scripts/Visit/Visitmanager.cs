@@ -72,20 +72,8 @@ public class Visitmanager : MonoBehaviour
         {
             gamemanager.Tip_Obj.SetActive(false);
         }
-        
-        if(gamemanager.LanguageBar.GetComponent<RectTransform>().sizeDelta.x>60)
-        {
-            gamemanager.LangRect.sizeDelta = new Vector2(GameManager.barClose, 1080);
-            gamemanager.LangChildImg.fillAmount = 0;
-            gamemanager.LanguageBar.transform.GetChild(0).gameObject.SetActive(false);
-            gamemanager.langNaviOn = false;
-            gamemanager.movelangNavi = false;
-            //GameObject obj = new GameObject();
-            //obj.name = "LangNavi_Close";
-            //gamemanager.Menu(obj);
-        }
-       
 
+        gamemanager.LanguageBar.SetActive(false);
     }
 
     private void Update()

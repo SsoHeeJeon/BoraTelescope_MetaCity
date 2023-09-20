@@ -453,6 +453,10 @@ public class SelfiFunction : MonoBehaviour
         this.transform.GetChild(0).gameObject.SetActive(true);
         this.transform.GetChild(0).gameObject.GetComponent<Controller>().enabled = true;
 
+        if (!jaemilangmode.Liveobj.activeSelf)
+        {
+            jaemilangmode.Liveobj.SetActive(true);
+        }
         CustomUI.transform.parent.gameObject.GetComponent<Canvas>().worldCamera = SelfiCam;
 
         if (SelectPenImg.gameObject.activeSelf)
@@ -534,10 +538,10 @@ public class SelfiFunction : MonoBehaviour
         //jaemilangmode.capturemode.FlashEffect();
         PhotoCount.SetActive(true);
         TakeCountStart = true;
-        countF = 5.2f;
+        countF = 5.5f;
         TakeCount();
         //Invoke("countdelay", 1.5f);
-        jaemilangmode.capturemode.CaptureCamera();
+        //jaemilangmode.capturemode.CaptureCamera();
         TakePhoto_Btn.SetActive(false);
         lightcontrol.SetActive(false);
         CustomScrollbar.value = 0;
@@ -559,7 +563,7 @@ public class SelfiFunction : MonoBehaviour
             if ((int)countF == 0)
             {
                 TakeCountStart = false;
-                //jaemilangmode.capturemode.FlashEffect();
+                jaemilangmode.capturemode.FlashEffect();
                 Invoke("countdelay", 0.01f);
             }
             else
@@ -699,7 +703,10 @@ public class SelfiFunction : MonoBehaviour
     {
         selfistate = SelfiState.None;
 
-        selfilightcontrol.LightOff();
+        if (GameManager.AnyError == false)
+        {
+            selfilightcontrol.LightOff();
+        }
 
         this.transform.GetChild(0).gameObject.GetComponent<Controller>().MoveOtehrmode();
 

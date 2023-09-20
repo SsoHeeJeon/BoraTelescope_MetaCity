@@ -28,7 +28,7 @@ public class ContentsInfo : LogSendServer
             Connect_Button();       // 시스템 컨트롤러 프로그램에 접속하여 모드상태플래그 불러오기
             WriteLog(NormalLogCode.Connect_SystemControl, "Connect_SystemControl_On", GetType().ToString());        // 불러온 모드상태 플래그 로그로 표현
             gamemanager.GetComponent<GameManager>().UISetting();       // UI 셋팅
-            //AwakeOnce = true;
+            AwakeOnce = true;
         }
     }
 
@@ -50,7 +50,7 @@ public class ContentsInfo : LogSendServer
                 break;
             case "Jaemilang":
                 //ApsanLabel.LoadLabelInfo();
-
+                Readfile();
                 WriteLog(LogSendServer.NormalLogCode.Load_ResourceFile, "Load_ResourceFile", GetType().ToString());
                 GameManager.MainMode = "JaemilangMode";
                 gamemanager.uilang = gamemanager.MenuBar.transform.GetChild(0).gameObject.GetComponent<UILanguage>();
@@ -71,5 +71,29 @@ public class ContentsInfo : LogSendServer
         GameManager.currentLang = GameManager.Language_enum.Korea;
         //gamemanager.Tip_Obj.GetComponent<Image>().sprite = label_open.Tip_K;
         //label_open.SelectCategortButton(label_open.CategoryContent.transform.GetChild(0).gameObject);
+    }
+
+    string Allstr_rec;
+    string[] GOTEXT_arr;
+    string GetText;
+
+    public void Readfile()
+    {
+        if (File.Exists(Application.dataPath + "/StreamingURL.json"))
+        {
+            Allstr_rec = File.ReadAllText(Application.dataPath + "/StreamingURL.json");
+            
+            if (Allstr_rec.Contains("}"))
+            {
+                GetText = Allstr_rec.Substring(1);
+                MinimalPlayback.path = GetText.Replace("}", string.Empty);
+            }
+        }
+        else
+        {
+            gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.UnLoad_Jsonfile, "UnLoad_Jsonfile", GetType().ToString());
+            GameManager.AnyError = true;
+            /// 에러로그만 보내고 정상작동할지 아니면 에러로그 보내고 ClearMode로 전환해서 할지
+        }
     }
 }
