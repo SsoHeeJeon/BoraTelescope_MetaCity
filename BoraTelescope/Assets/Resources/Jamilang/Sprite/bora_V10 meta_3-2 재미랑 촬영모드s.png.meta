@@ -23,6 +23,15 @@ TextureImporter:
   - first:
       213: 4270347866024772629
     second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_6"
+  - first:
+      213: -8960952848363230587
+    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_7"
+  - first:
+      213: -2989515251050384729
+    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_8"
+  - first:
+      213: -2649091223459768041
+    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_9"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +153,7 @@ TextureImporter:
         width: 175
         height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +169,12 @@ TextureImporter:
       name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_1"
       rect:
         serializedVersion: 2
-        x: 1119
+        x: 1110
         y: 743
         width: 886
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +195,7 @@ TextureImporter:
         width: 195
         height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +216,7 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +232,12 @@ TextureImporter:
       name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_4"
       rect:
         serializedVersion: 2
-        x: 1119
+        x: 1109
         y: 467
         width: 886
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,11 +255,11 @@ TextureImporter:
         serializedVersion: 2
         x: 39
         y: 525
-        width: 722
+        width: 662
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 7, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -270,7 +279,7 @@ TextureImporter:
         width: 362
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,6 +287,69 @@ TextureImporter:
       bones: []
       spriteID: 51401c542c2534b30800000000000000
       internalID: 4270347866024772629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_7"
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 396
+        width: 50
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ae8409cdc44a380800000000000000
+      internalID: -8960952848363230587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_8"
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 340
+        width: 50
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a27782e7bb1386d0800000000000000
+      internalID: -2989515251050384729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs_9"
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 166
+        width: 106
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719531851998c3bd0800000000000000
+      internalID: -2649091223459768041
       vertices: []
       indices: 
       edges: []
