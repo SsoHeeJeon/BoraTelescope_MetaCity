@@ -15,6 +15,10 @@ public class SelfiLightControl : MonoBehaviour
     public Slider ControlLIght;
     public Text LightState;
 
+    public Image onoffbtn;
+    public Sprite OnImg;
+    public Sprite OffImg;
+
     // Start is called before the first frame update
     public void ReadytoStart()
     {
@@ -61,11 +65,13 @@ public class SelfiLightControl : MonoBehaviour
             case LightONOFF.On:
                 LightControl.LightOFF();
                 lightonoff = LightONOFF.Off;
+                onoffbtn.sprite = OffImg;
                 break;
             case LightONOFF.Off:
                 ControlLIght.value = 10;
                 LightControl.LightON();
                 lightonoff = LightONOFF.On;
+                onoffbtn.sprite = OnImg;
                 break;
         }
     }

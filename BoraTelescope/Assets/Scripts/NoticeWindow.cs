@@ -153,7 +153,7 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "사진찍기를 그만하시겠습니까?";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
+                        NoticeText.text = "Would you like to stop taking pictures?";
                         break;
                 }
                 ButType_1.SetActive(false);
@@ -167,7 +167,7 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "사진꾸미기를 그만하시겠습니까?\r\n해당 사진은 삭제됩니다.";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
+                        NoticeText.text = "Do you want to stop decorating pictures?\r\nThe photo will be deleted.";
                         break;
                 }
                 ButType_1.SetActive(false);
@@ -181,7 +181,7 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "셀피모드에서 나가시겠습니까?\r\n해당 사진은 삭제됩니다.";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
+                        NoticeText.text = "Would you like to leave selfie mode?\r\nThe photo will be deleted.";
                         break;
                 }
                 ButType_1.SetActive(false);
@@ -195,7 +195,7 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "사진을 다시 촬영하시겠습니까?";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
+                        NoticeText.text = "Would you like to take the picture again?";
                         break;
                 }
                 ButType_1.SetActive(false);
@@ -209,7 +209,7 @@ public class NoticeWindow : MonoBehaviour
                         NoticeText.text = "죄송합니다. 현재 조명 사용이 어렵습니다.";
                         break;
                     case GameManager.Language_enum.English:
-                        NoticeText.text = "";
+                        NoticeText.text = "I'm sorry, but the lighting is currently difficult to use.";
                         break;
                 }
                 ButType_1.SetActive(true);

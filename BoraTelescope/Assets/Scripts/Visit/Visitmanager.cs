@@ -716,4 +716,21 @@ public class Visitmanager : MonoBehaviour
             Rightsp.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
+
+    public GameObject Confirm_K;
+    public GameObject Confirm_E;
+
+    public void OnClickComplete()
+    {
+        if(GameManager.currentLang == GameManager.Language_enum.Korea)
+        {
+            Confirm_K.SetActive(true);
+            Confirm_E.SetActive(false);
+        }
+        else
+        {
+            Confirm_K.SetActive(false);
+            Confirm_E.SetActive(true);
+        }
+    }
 }
