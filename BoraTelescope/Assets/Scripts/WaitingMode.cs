@@ -152,7 +152,7 @@ public class WaitingMode : MonoBehaviour
             Loading.nextScene = "CartoonMode";
         } else if (ContentsInfo.ContentsName == "Jaemilang")
         {
-            Loading.nextScene = "JamilangMode";
+            Loading.nextScene = "JaemilangMode";
         }
 
         gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "ChangeMode : Start(" + GameManager.PrevMode + " - " + Loading.nextScene + ")", GetType().ToString());

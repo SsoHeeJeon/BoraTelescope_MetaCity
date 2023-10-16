@@ -27,7 +27,7 @@ public class MinimalPlayback : MonoBehaviour
 
         Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
         //_libVLC.Log += (s, e) => UnityEngine.Debug.Log(e.FormattedLog); // enable this for logs in the editor
-
+        gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "LiveStreaming ReadyStart", GetType().ToString());
         PlayPause();
     }
 
@@ -67,8 +67,8 @@ public class MinimalPlayback : MonoBehaviour
         else
         {
             playing = true;
-
-            if(_mediaPlayer.Media == null)
+            gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "LiveStreaming PlayStart", GetType().ToString());
+            if (_mediaPlayer.Media == null)
             {
                 // playing remote media
                 _mediaPlayer.Media = new Media(_libVLC, new Uri(path));    // url 변경 필요
@@ -110,6 +110,7 @@ public class MinimalPlayback : MonoBehaviour
 
             _mediaPlayer.Size(0, ref i_videoWidth, ref i_videoHeight);
             var texptr = _mediaPlayer.GetTexture(i_videoWidth, i_videoHeight, out bool updated);
+            gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "LiveStreaming Ready", GetType().ToString());
             if (i_videoWidth != 0 && i_videoHeight != 0 && updated && texptr != IntPtr.Zero)
             {
                 Debug.Log("Creating texture with height " + i_videoHeight + " and width " + i_videoWidth);
@@ -146,6 +147,7 @@ public class MinimalPlayback : MonoBehaviour
     {
         if (ReadyImg.activeSelf)
         {
+            gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "LiveStreaming Start", GetType().ToString());
             ReadyImg.SetActive(false);
         }
     }

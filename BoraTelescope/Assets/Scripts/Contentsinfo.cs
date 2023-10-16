@@ -21,11 +21,11 @@ public class ContentsInfo : LogSendServer
         {
             //ContentsName = "Cartoon";
             ContentsName = "Jaemilang";
-
+            Connect_Button();       // 시스템 컨트롤러 프로그램에 접속하여 모드상태플래그 불러오기
             TelescopeInfo();
             WriteLog(NormalLogCode.StartContents, "StartContents", GetType().ToString());       // 콘텐츠 시작 로그 생성
 
-            Connect_Button();       // 시스템 컨트롤러 프로그램에 접속하여 모드상태플래그 불러오기
+            //Connect_Button();       // 시스템 컨트롤러 프로그램에 접속하여 모드상태플래그 불러오기
             WriteLog(NormalLogCode.Connect_SystemControl, "Connect_SystemControl_On", GetType().ToString());        // 불러온 모드상태 플래그 로그로 표현
             gamemanager.GetComponent<GameManager>().UISetting();       // UI 셋팅
             AwakeOnce = true;

@@ -217,6 +217,18 @@ public class NoticeWindow : MonoBehaviour
                 NoticeIcon.sprite = ErrorIcon;
                 break;
         }
+
+        if(GameManager.currentLang == GameManager.Language_enum.Korea)
+        {
+            ButType_1.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            ButType_2.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            ButType_2.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+        } else if(GameManager.currentLang != GameManager.Language_enum.Korea)
+        {
+            ButType_1.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+            ButType_2.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+            ButType_2.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     public static void NoticeYes()

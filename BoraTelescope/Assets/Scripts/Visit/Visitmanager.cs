@@ -726,11 +726,13 @@ public class Visitmanager : MonoBehaviour
         {
             Confirm_K.SetActive(true);
             Confirm_E.SetActive(false);
+            VisitCapture.PopObject = Confirm_K;
         }
         else
         {
             Confirm_K.SetActive(false);
             Confirm_E.SetActive(true);
+            VisitCapture.PopObject = Confirm_E;
         }
     }
 }

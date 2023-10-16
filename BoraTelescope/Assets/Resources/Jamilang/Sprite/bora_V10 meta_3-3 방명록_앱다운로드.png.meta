@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 9051a9121521a704b8fd1f8d10b35393
+guid: d2a7f2b0f69db1546ac4d523990ccf03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7452567291532260194
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_0"
+      213: -950848410654148927
+    second: "bora_V10 meta_3-3 \uBC29\uBA85\uB85D_\uC571\uB2E4\uC6B4\uB85C\uB4DC_0"
   - first:
-      213: -310895270974294044
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_1"
-  - first:
-      213: 4280093672813517313
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_4"
-  - first:
-      213: 5960614194370277784
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_8"
-  - first:
-      213: 7926618484680484115
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_9"
-  - first:
-      213: 8890426658233708773
-    second: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_10"
+      213: 1265286509991272589
+    second: "bora_V10 meta_3-3 \uBC29\uBA85\uB85D_\uC571\uB2E4\uC6B4\uB85C\uB4DC_1"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_0"
+      name: "bora_V10 meta_3-3 \uBC29\uBA85\uB85D_\uC571\uB2E4\uC6B4\uB85C\uB4DC_0"
       rect:
         serializedVersion: 2
-        x: 914
-        y: 813
-        width: 177
-        height: 177
+        x: 40
+        y: 1188
+        width: 1632
+        height: 820
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 263b97c5776dc6760800000000000000
-      internalID: 7452567291532260194
+      spriteID: 1c6f6b78868edc2f0800000000000000
+      internalID: -950848410654148927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_1"
+      name: "bora_V10 meta_3-3 \uBC29\uBA85\uB85D_\uC571\uB2E4\uC6B4\uB85C\uB4DC_1"
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 743
-        width: 885
-        height: 242
+        x: 40
+        y: 243
+        width: 1632
+        height: 820
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,92 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e77a33f56a7fabf0800000000000000
-      internalID: -310895270974294044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_4"
-      rect:
-        serializedVersion: 2
-        x: 1111
-        y: 467
-        width: 885
-        height: 242
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10a527db482f56b30800000000000000
-      internalID: 4280093672813517313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_8"
-      rect:
-        serializedVersion: 2
-        x: 1785
-        y: 396
-        width: 48
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8917792770b58b250800000000000000
-      internalID: 5960614194370277784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_9"
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 167
-        width: 104
-        height: 265
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 315ec69c381010e60800000000000000
-      internalID: 7926618484680484115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bora_V10 meta_3-2 \uC7AC\uBBF8\uB791 \uCD2C\uC601\uBAA8\uB4DCs(\uC601\uBB38)_10"
-      rect:
-        serializedVersion: 2
-        x: 1785
-        y: 340
-        width: 48
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e0fea131f3216b70800000000000000
-      internalID: 8890426658233708773
+      spriteID: d80af1780633f8110800000000000000
+      internalID: 1265286509991272589
       vertices: []
       indices: 
       edges: []
@@ -261,7 +165,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eb9dcf2bcba3614458bb12bd0915a71c
+    spriteID: 4f0e460048030c94b80cc42a087c30c9
     internalID: 0
     vertices: []
     indices: 

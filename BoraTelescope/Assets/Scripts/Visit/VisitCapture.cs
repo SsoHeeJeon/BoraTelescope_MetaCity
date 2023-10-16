@@ -17,7 +17,7 @@ public class VisitCapture : MonoBehaviour
     public RenEvent ren;
 
     [SerializeField]
-    GameObject PopObject;
+    public static GameObject PopObject;
     public void OnClickScreenShot()
     {
         StartCoroutine("TakePicture");

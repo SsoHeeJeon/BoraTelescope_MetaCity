@@ -39,6 +39,9 @@ public class GameManager : ContentsInfo
     public Text Degree;
     public Text Date;
 
+    public GameObject VisitSave_K;
+    public GameObject VisitSave_E;
+
     public AudioSource ButtonEffect;
     public AudioClip ButtonSound;
 
