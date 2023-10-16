@@ -127,6 +127,7 @@ public class MinimalPlayback : MonoBehaviour
         }
         else if (tex != null)
         {
+            ReadyImg.SetActive(false);
             var texptr = _mediaPlayer.GetTexture((uint)tex.width, (uint)tex.height, out bool updated);
             if (updated)
             {

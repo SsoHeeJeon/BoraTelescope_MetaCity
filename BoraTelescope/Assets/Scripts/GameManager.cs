@@ -525,7 +525,10 @@ public class GameManager : ContentsInfo
                 btn.transform.parent.GetChild(0).GetChild(0).gameObject.SetActive(false);
                 break;
         }
-        selfifunction.ChangeLanguage();
+        if(selfifunction!=null)
+        {
+            selfifunction.ChangeLanguage();
+        }
         WriteLog(NormalLogCode.ChangeLanguage, "ChangeLanguage : " + currentLang, GetType().ToString());
 
         LanguageBtn.transform.GetChild(0).gameObject.SetActive(false);
