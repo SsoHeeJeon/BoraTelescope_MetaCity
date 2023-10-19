@@ -103,7 +103,13 @@ public class MinimalPlayback : MonoBehaviour
 
         if (tex == null)
         {
-            ReadyImg.SetActive(true);
+            if (gamemanager.jaemilangmode.Graffiti_background.activeSelf || gamemanager.jaemilangmode.Jaemilang_background.activeSelf)
+            {
+                ReadyImg.SetActive(false);
+            } else
+            {
+                ReadyImg.SetActive(true);
+            }
             // If received size is not null, it and scale the texture
             uint i_videoHeight = 0;
             uint i_videoWidth = 0;
