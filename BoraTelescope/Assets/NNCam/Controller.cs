@@ -122,9 +122,9 @@ namespace NNCam {
                     using (var segs = output.Reshape(new TensorShape(1, h, w, 1)))
                     {
                         // Bake into a render texture with normalizing into [0, 1].
-                        //_mask = segs.ToRenderTexture(0, 0, 1.0f / 32, 0.5f);
+                        _mask = segs.ToRenderTexture(0, 0, 3.0f / 32, 0.5f);
                         //_mask = segs.ToRenderTexture(0, 0, 1.0f / 256, 0.5f);
-                        _mask = segs.ToRenderTexture(0, 0, 1.0f / 16, 0.5f);
+                        //_mask = segs.ToRenderTexture(0, 0, 1.0f / 16, 0.5f);
                         _props.SetTexture("_MaskTex", _mask);
                     }
                 }
@@ -136,8 +136,8 @@ namespace NNCam {
             _converter.SetBuffer(kernel, "_Tensor", _buffer);
             _converter.SetInt("_Width", Width);
             _converter.SetInt("_Height", Height);
-            //_converter.Dispatch(kernel, Width / 8 + 1, Height / 8 + 1, 1); //위치
-            _converter.Dispatch(kernel, Width / 8, Height / 8, 1); //위치
+            _converter.Dispatch(kernel, Width / 8 + 1, Height / 8 + 1, 1); //위치
+            //_converter.Dispatch(kernel, Width / 8, Height / 8, 1); //위치
             
             // New task scheduling
             using (var tensor = new Tensor(1, Height, Width, 3, _buffer))
