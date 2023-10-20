@@ -1639,7 +1639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335394225}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BtnGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3776,7 +3776,7 @@ GameObject:
   - component: {fileID: 948915490}
   - component: {fileID: 948915489}
   - component: {fileID: 948915488}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5286,12 +5286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd04382b3e6f8b42b92dcc32fd1e6ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisObject: {fileID: 1257136001}
-  Lang_s:
-  - {fileID: 21300000, guid: 712f14f9598e12a43ac1db1fcc926b52, type: 3}
-  - {fileID: 21300000, guid: 5464065a3a95ffd41be400f1f4a9b0e7, type: 3}
-  - {fileID: 21300000, guid: 5464065a3a95ffd41be400f1f4a9b0e7, type: 3}
-  - {fileID: 21300000, guid: 5464065a3a95ffd41be400f1f4a9b0e7, type: 3}
 --- !u!114 &1257136004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6320,7 +6314,7 @@ GameObject:
   - component: {fileID: 1431482304}
   - component: {fileID: 1431482303}
   - component: {fileID: 1431482305}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6440,7 +6434,7 @@ GameObject:
   - component: {fileID: 1469486267}
   - component: {fileID: 1469486269}
   - component: {fileID: 1469486268}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7151,7 +7145,7 @@ GameObject:
   - component: {fileID: 1721522338}
   - component: {fileID: 1721522337}
   - component: {fileID: 1721522336}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7256,7 +7250,7 @@ GameObject:
   - component: {fileID: 1722778264}
   - component: {fileID: 1722778263}
   - component: {fileID: 1722778262}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7708,12 +7702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd04382b3e6f8b42b92dcc32fd1e6ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisObject: {fileID: 1800173992}
-  Lang_s:
-  - {fileID: 21300000, guid: e7d07855db5b20246966c117c5c8781c, type: 3}
-  - {fileID: 21300000, guid: 148584f9a6b0a5f459b8fcf35643a09b, type: 3}
-  - {fileID: 21300000, guid: 148584f9a6b0a5f459b8fcf35643a09b, type: 3}
-  - {fileID: 21300000, guid: 148584f9a6b0a5f459b8fcf35643a09b, type: 3}
 --- !u!114 &1800173995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8598,7 +8586,7 @@ GameObject:
   - component: {fileID: 1915714798}
   - component: {fileID: 1915714797}
   - component: {fileID: 1915714796}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9272,7 +9260,7 @@ GameObject:
   - component: {fileID: 2049201500}
   - component: {fileID: 2049201499}
   - component: {fileID: 2049201498}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ImagePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9520,7 +9508,7 @@ GameObject:
   - component: {fileID: 2105952278}
   - component: {fileID: 2105952277}
   - component: {fileID: 2105952279}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Rot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

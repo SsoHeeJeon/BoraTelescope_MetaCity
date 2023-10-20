@@ -473,6 +473,7 @@ public class GameManager : ContentsInfo
         //}
     }
 
+
     public WeatherData weatherInfo;
 
     IEnumerator GetWeather(string city)
