@@ -769,6 +769,13 @@ public class SelfiFunction : MonoBehaviour
 
     public void RemoveItem(GameObject item)
     {
+        if(item.name == "Photopreview")
+        {
+            jaemilangmode.Liveobj.SetActive(true);
+            jaemilangmode.Jaemilang_background.SetActive(false);
+            jaemilangmode.Graffiti_background.SetActive(false);
+        }
+
         //Destroy(item.transform.parent.parent.gameObject);
         for (int index = 0; index < UIStickBtn.transform.childCount; index++)
         {
