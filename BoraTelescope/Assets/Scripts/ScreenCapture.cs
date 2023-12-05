@@ -197,6 +197,10 @@ public class ScreenCapture : UploadImage
                 {
                     gamemanager.jaemilangmode.Graffiti_background.SetActive(false);
                 }
+                else if(gamemanager.jaemilangmode.Meta_Bakcground.activeSelf)
+                {
+                    gamemanager.jaemilangmode.Meta_Bakcground.SetActive(false);
+                }
                 
                 gamemanager.WriteLog(LogSendServer.NormalLogCode.Selfi_Photo, "Selfi_Photo", GetType().ToString());
                 //Destroy(screenShot);

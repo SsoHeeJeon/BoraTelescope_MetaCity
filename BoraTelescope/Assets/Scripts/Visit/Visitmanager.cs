@@ -12,9 +12,9 @@ public class Visitmanager : MonoBehaviour
 {
     enum State
     {
-       None,
-       Left,
-       Right,
+        None,
+        Left,
+        Right,
     }
     State state = 0;
     [SerializeField]
@@ -28,7 +28,7 @@ public class Visitmanager : MonoBehaviour
     [SerializeField]
     GameObject VisitHome;
     [SerializeField]
-    Image img;  
+    Image img;
     float ContentX = 100;
     float ContentY = -70;
 
@@ -45,7 +45,7 @@ public class Visitmanager : MonoBehaviour
     private void Awake()
     {
         gamemanager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        gamemanager.visitmanager= this;
+        gamemanager.visitmanager = this;
     }
 
     void Start()
@@ -78,7 +78,7 @@ public class Visitmanager : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.currentLang == GameManager.Language_enum.Korea)
+        if (GameManager.currentLang == GameManager.Language_enum.Korea)
         {
             LangObj[0].GetComponent<RectTransform>().anchoredPosition = new Vector2(120, -24);
             LangObj[1].GetComponent<RectTransform>().anchoredPosition = new Vector2(201, -24);
@@ -113,7 +113,7 @@ public class Visitmanager : MonoBehaviour
         float a = int.Parse(Currentmonth);
         float b = int.Parse(Currentyear);
         a += 1;
-        if(a>=13)
+        if (a >= 13)
         {
             a = 1;
             b += 1;
@@ -121,7 +121,7 @@ public class Visitmanager : MonoBehaviour
         Currentmonth = a.ToString();
         Currentyear = b.ToString();
         Currentmonth = "0" + Currentmonth;
-        string monthtext= Currentmonth;
+        string monthtext = Currentmonth;
         if (int.Parse(Currentmonth) >= 10)
         {
             monthtext = Currentmonth.Substring(1, 2);
@@ -138,7 +138,7 @@ public class Visitmanager : MonoBehaviour
             BackGround.transform.GetChild(1).gameObject.SetActive(true);
         }
 
-        if(a==int.Parse(DateTime.Now.ToString("MM"))&& b==int.Parse(DateTime.Now.ToString("yyyy")))
+        if (a == int.Parse(DateTime.Now.ToString("MM")) && b == int.Parse(DateTime.Now.ToString("yyyy")))
         {
             Right.enabled = false;
             Right.gameObject.SetActive(false);
@@ -161,7 +161,7 @@ public class Visitmanager : MonoBehaviour
         float a = int.Parse(Currentmonth);
         float b = int.Parse(Currentyear);
         a -= 1;
-        if(a<=0)
+        if (a <= 0)
         {
             a = 12;
             b -= 1;
@@ -169,13 +169,13 @@ public class Visitmanager : MonoBehaviour
         Currentmonth = a.ToString();
         Currentyear = b.ToString();
         Currentmonth = "0" + Currentmonth;
-        string monthtext= Currentmonth;
+        string monthtext = Currentmonth;
         if (int.Parse(Currentmonth) >= 10)
         {
             monthtext = Currentmonth.Substring(1, 2);
         }
         CurrentDate.text = Currentyear + "." + monthtext;
-        if (monthtext == DateTime.Now.ToString("MM") || "0" +Currentmonth == DateTime.Now.ToString("MM"))
+        if (monthtext == DateTime.Now.ToString("MM") || "0" + Currentmonth == DateTime.Now.ToString("MM"))
         {
             BackGround.transform.GetChild(0).gameObject.SetActive(true);
             BackGround.transform.GetChild(1).gameObject.SetActive(false);
@@ -186,14 +186,14 @@ public class Visitmanager : MonoBehaviour
             BackGround.transform.GetChild(1).gameObject.SetActive(true);
         }
 
-        if (a-1 == int.Parse(DateTime.Now.ToString("MM")) && b < int.Parse(DateTime.Now.ToString("yyyy")))
+        if (a - 1 == int.Parse(DateTime.Now.ToString("MM")) && b < int.Parse(DateTime.Now.ToString("yyyy")))
         {
             Left.enabled = false;
             Left.gameObject.SetActive(false);
             state = State.None;
         }
         DateTime StartTime = Convert.ToDateTime("2023-06-01 00:00:00");
-        int result = DateTime.Compare(Convert.ToDateTime(Currentyear+"/"+ monthtext), StartTime);
+        int result = DateTime.Compare(Convert.ToDateTime(Currentyear + "/" + monthtext), StartTime);
         if (result < 0)
         {
             Left.enabled = false;
@@ -225,7 +225,7 @@ public class Visitmanager : MonoBehaviour
 
     public void ResetVisitList()
     {
-        for (int i=0; i< VisitList.Count; i++)
+        for (int i = 0; i < VisitList.Count; i++)
         {
             Destroy(VisitList[i].gameObject);
         }
@@ -238,7 +238,7 @@ public class Visitmanager : MonoBehaviour
     {
         if (value.y < 0.01f)
         {
-            if(!scrollbarcheck)
+            if (!scrollbarcheck)
             {
                 scrollbarcheck = true;
                 StartCoroutine(IEReadImage(Currentmonth));
@@ -256,26 +256,26 @@ public class Visitmanager : MonoBehaviour
 
     public void ReadImage(string Month)
     {
-        if (Month.Substring(0,1) == "0")
+        if (Month.Substring(0, 1) == "0")
         {
-            if(int.Parse(Month)>=10)
+            if (int.Parse(Month) >= 10)
             {
                 Month = Month.Substring(1, 2);
             }
         }
 
         int index = 0;
-        if(Scrollindex == 0)
+        if (Scrollindex == 0)
         {
             ContentX = 468;
             ContentY = -183;
         }
 
         int indexcount = -1;
-        if(Scrollindex == 0)
+        if (Scrollindex == 0)
         {
 
-            if (Scrollindex + 7 >= gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month)-1].Count)
+            if (Scrollindex + 7 >= gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1].Count)
             {
                 indexcount = gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1].Count;
             }
@@ -286,7 +286,7 @@ public class Visitmanager : MonoBehaviour
         }
         else
         {
-            if(Scrollindex+8>= gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1].Count)
+            if (Scrollindex + 8 >= gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1].Count)
             {
                 indexcount = gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1].Count;
             }
@@ -295,7 +295,7 @@ public class Visitmanager : MonoBehaviour
                 indexcount = Scrollindex + 8;
             }
         }
-        for (int i= Scrollindex; i< indexcount; i++)
+        for (int i = Scrollindex; i < indexcount; i++)
         {
             print(int.Parse(Month) - 1);
             if (gamemanager.gameObject.GetComponent<Visitinfo>().list[int.Parse(Month) - 1][i].Contains(".png"))
@@ -348,7 +348,7 @@ public class Visitmanager : MonoBehaviour
             }
         }
 
-        if(indexcount == 0)
+        if (indexcount == 0)
         {
             BackGround.GetComponent<RectTransform>().sizeDelta = new Vector2(1704, -ContentY + ((360) + 60));
             BackGround.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
@@ -439,7 +439,7 @@ public class Visitmanager : MonoBehaviour
         {
             if (File.Name.Contains(".png"))
             {
-                byte[] byteTexture = System.IO.File.ReadAllBytes("C:/Visit/" + Month +"/" + File.Name);
+                byte[] byteTexture = System.IO.File.ReadAllBytes("C:/Visit/" + Month + "/" + File.Name);
                 if (byteTexture.Length > 0)
                 {
                     Texture2D tex = new Texture2D(0, 0);
@@ -481,8 +481,8 @@ public class Visitmanager : MonoBehaviour
                 break;
             }
         }
-        
-        for(int i=1; i<VisitList.Count; i++)
+
+        for (int i = 1; i < VisitList.Count; i++)
         {
             VisitList[i].gameObject.SetActive(true);
             VisitList[i].gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(ContentX, ContentY);
@@ -509,7 +509,7 @@ public class Visitmanager : MonoBehaviour
         //DrawVisit.transform.position = Camera.main.transform.position;
         GetComponent<VisitCapture>().ren.BackGround.GetComponent<MeshRenderer>().material = GetComponent<VisitCapture>().ren.WhiteMat;
         GetComponent<VisitCapture>().ren.Prefab.GetComponent<LineRenderer>().material = GetComponent<VisitCapture>().ren.BlackMat;
-        for(int i=0; i< VisitList.Count; i++)
+        for (int i = 0; i < VisitList.Count; i++)
         {
             VisitList[i].gameObject.SetActive(true);
         }
@@ -578,7 +578,7 @@ public class Visitmanager : MonoBehaviour
 
     public void MenuBtn(GameObject Obj)
     {
-        for(int i=0; i<Obj.transform.parent.childCount; i++)
+        for (int i = 0; i < Obj.transform.parent.childCount; i++)
         {
             Obj.transform.parent.GetChild(i).GetChild(0).gameObject.SetActive(false);
         }
@@ -696,7 +696,7 @@ public class Visitmanager : MonoBehaviour
     GameObject Rightsp;
     [SerializeField]
     RectTransform IconMenu;
-     
+
     public void OnClickLeftRight(GameObject obj)
     {
         if (obj.name == "Right")
@@ -707,7 +707,7 @@ public class Visitmanager : MonoBehaviour
             Leftsp.transform.GetChild(0).gameObject.SetActive(false);
             Rightsp.transform.GetChild(0).gameObject.SetActive(false);
         }
-        else if(obj.name == "Left")
+        else if (obj.name == "Left")
         {
             IconMenu.anchoredPosition = new Vector2(553, 439);
             Leftsp.SetActive(false);
@@ -722,7 +722,7 @@ public class Visitmanager : MonoBehaviour
 
     public void OnClickComplete()
     {
-        if(GameManager.currentLang == GameManager.Language_enum.Korea)
+        if (GameManager.currentLang == GameManager.Language_enum.Korea)
         {
             Confirm_K.SetActive(true);
             Confirm_E.SetActive(false);
@@ -734,5 +734,10 @@ public class Visitmanager : MonoBehaviour
             Confirm_E.SetActive(true);
             VisitCapture.PopObject = Confirm_E;
         }
+    }
+
+    public void OnClickUpbtn()
+    {
+        BackGround.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
     }
 }

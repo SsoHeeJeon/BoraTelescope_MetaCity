@@ -103,7 +103,7 @@ public class MinimalPlayback : MonoBehaviour
 
         if (tex == null)
         {
-            if (gamemanager.jaemilangmode.Graffiti_background.activeSelf || gamemanager.jaemilangmode.Jaemilang_background.activeSelf)
+            if (gamemanager.jaemilangmode.Graffiti_background.activeSelf || gamemanager.jaemilangmode.Jaemilang_background.activeSelf || gamemanager.jaemilangmode.Meta_Bakcground.activeSelf)
             {
                 ReadyImg.SetActive(false);
             } else

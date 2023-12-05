@@ -267,6 +267,7 @@ public class NoticeWindow : MonoBehaviour
                 }
                 gamemanager.jaemilangmode.Jaemilang_background.SetActive(false);
                 gamemanager.jaemilangmode.Graffiti_background.SetActive(false);
+                gamemanager.jaemilangmode.Meta_Bakcground.SetActive(false);
                 break;
             case "StopSelfiCustom":
                 gamemanager.jaemilangmode.selfifunction.FinishSelfi();

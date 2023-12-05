@@ -184,11 +184,18 @@ public class SelfiFunction : MonoBehaviour
                 }
                 break;
         }
-        for (int index = 0; index < ControlUI.transform.childCount; index++)
+        //for (int index = 0; index < ControlUI.transform.childCount; index++)
+        //{
+        //    ControlUI.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        //}
+        if(btn.transform.GetChild(0).gameObject.activeSelf)
         {
-            ControlUI.transform.GetChild(index).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            btn.transform.GetChild(0).gameObject.SetActive(false);
         }
-        btn.transform.GetChild(0).gameObject.SetActive(true);
+        else
+        {
+            btn.transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     public void SetSticker(GameObject btn)
@@ -530,7 +537,9 @@ public class SelfiFunction : MonoBehaviour
     }
 
     public void TakePhoto()
-    { 
+    {
+        gamemanager.jaemilangmode.MetaCityBackGround.GetComponent<MetaBackGround>().StopTex();
+        gamemanager.jaemilangmode.metabackgroundstate = JaemilangMode.MetaBackGroundState.Closing;
         selfistate = SelfiState.Take;
         //gamemanager.Selfi_Obj.transform.position = jaemilangmode.CameraWindow.transform.position;
         PRS.SetActive(false);
@@ -593,6 +602,10 @@ public class SelfiFunction : MonoBehaviour
         } else if (gamemanager.jaemilangmode.Graffiti_background.activeSelf)
         {
             gamemanager.jaemilangmode.Graffiti_background.SetActive(false);
+        }
+        else if(gamemanager.jaemilangmode.Meta_Bakcground.activeSelf)
+        {
+            gamemanager.jaemilangmode.Meta_Bakcground.SetActive(false);
         }
 
         if (SelectPenImg.gameObject.activeSelf)

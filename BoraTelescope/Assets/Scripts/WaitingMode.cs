@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEngine.Assertions.Must;
 
 public class WaitingMode : MonoBehaviour
 {
@@ -61,7 +62,7 @@ public class WaitingMode : MonoBehaviour
 
         if (BackGround_Video.isPlaying == false && SeeVideo == false)
         {
-            LoadViedo();
+            //LoadViedo();
             SeeVideo = true;
         }
     }
@@ -135,9 +136,15 @@ public class WaitingMode : MonoBehaviour
 
     public void OutWaitingMode()
     {
+        for(int i=0; i< gamemanager.MenuBar.transform.GetChild(0).childCount; i++)
+        {
+            gamemanager.MenuBar.transform.GetChild(0).GetChild(i).GetChild(0).gameObject.SetActive(false);
+        }
+        gamemanager.MenuBar.transform.GetChild(0).GetChild(0).GetChild(0).gameObject.SetActive(transform);
+        gamemanager.MenuBar.GetComponent<Image>().enabled = true;
         //BackGround_Video.clip = null;
-        BackGround_Video.url = "";
-        BackGround_Video.Stop();
+        ////BackGround_Video.url = "";
+        //BackGround_Video.Stop();
 
         //if (gamemanager.NaviRect.sizeDelta.x < 472f)
         //{
@@ -157,5 +164,7 @@ public class WaitingMode : MonoBehaviour
 
         gamemanager.WriteLog(LogSendServer.NormalLogCode.ChangeMode, "ChangeMode : Start(" + GameManager.PrevMode + " - " + Loading.nextScene + ")", GetType().ToString());
         SceneManager.LoadScene("Loading");
+        
     }
 }
+        

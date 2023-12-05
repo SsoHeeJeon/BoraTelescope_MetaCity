@@ -43,8 +43,10 @@ public class QRMaker : MonoBehaviour
         {
             //url = "http://211.104.146.87:78/info/boraphotodownload/be890630-088e-4760-8cc7-905c6a91bdf1-1-2022-07-07-18-27-27-661.png";
             //string url = "https://borabucket.s3.ap-northeast-2.amazonaws.com/" + filename;
+            
+            url = "https://dev-xr.awesomepia.com/cms/photo_view.do?photoId=" + url;
+            //url = "https://xr.awesomepia.com/cms/photo_view.do?photoId=" + url;
             Texture2D QRImage = CreateQR(url);
-
             QRCodeImage.texture = QRImage;
             Invoke("waitQRcode", 1f);
         } else if(GameManager.internetCon == false)
@@ -80,7 +82,7 @@ public class QRMaker : MonoBehaviour
             QRCodeImage.transform.parent.gameObject.transform.GetChild(2).gameObject.SetActive(true);
 
             gamemanager.jaemilangmode.capturemode.customMark.transform.parent = gamemanager.jaemilangmode.capturemode.flasheffect.transform.parent.gameObject.transform;
-
+                
             gamemanager.jaemilangmode.capturemode.customMark.transform.localPosition = CaptureMode.originPos;
 
             gamemanager.jaemilangmode.capturemode.customMark.gameObject.SetActive(false);

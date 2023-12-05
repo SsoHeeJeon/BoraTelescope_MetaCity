@@ -1,14 +1,11 @@
-using Amazon.S3.Model;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using Amazon.S3;
 using Amazon;
 using System;
-using UnityEngine.SceneManagement;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 
 public class UploadImage : QRMaker
 {
@@ -102,11 +99,23 @@ public class UploadImage : QRMaker
         
         try
         {
-            HttpResponseMessage response = httpClient.PostAsync("https://bora.web.awesomeserver.kr/info/BoraUploadForPhotoToS3", form).Result; // 요청할 페이지 주소 (반드시 http 나 https 로 시작해야함)
+            HttpResponseMessage response = httpClient.PostAsync("https://bora.web.awesomeserver.kr/info/BoraUploadForPhotoToS3ReturnPhotoID", form).Result; // 요청할 페이지 주소 (반드시 http 나 https 로 시작해야함)
             httpClient.Dispose();
             //string sd = response.Content.ReadAsStringAsync().Result; // 성공적으로 완료 될 시 서버 측에서의 답변 값
             url = response.Content.ReadAsStringAsync().Result; // 성공적으로 완료 될 시 서버 측에서의 답변 값
             Console.WriteLine(url);
+            print(url);
+            string pattern = @"bora_photo_id=(\d+)";
+            Match match = Regex.Match(url, pattern);
+            if(match.Success) 
+            {
+                url = match.Groups[1].Value;
+            }
+            else
+            {
+                gamemanager.jaemilangmode.capturemode.CaptureEndCamera();
+                NoticeWindow.NoticeWindowOpen("ErrorInternet");
+            }
 
             if (url == "Fail Upload")
             {
