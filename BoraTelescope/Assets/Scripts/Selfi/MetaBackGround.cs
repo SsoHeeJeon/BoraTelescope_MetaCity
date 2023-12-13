@@ -13,23 +13,14 @@ public class MetaBackGround : MonoBehaviour
     public class Data
     {
 
-        [XmlElement(ElementName = "imgNo")]
-        public int ImgNo { get; set; }
+        [XmlElement(ElementName = "relayCartoonPageNo")]
+        public int RelayCartoonPageNo { get; set; }
 
-        [XmlElement(ElementName = "userCodeNo")]
-        public int UserCodeNo { get; set; }
+        [XmlElement(ElementName = "cartoonPageImgPath")]
+        public string CartoonPageImgPath { get; set; }
 
-        [XmlElement(ElementName = "position")]
-        public string Position { get; set; }
-
-        [XmlElement(ElementName = "imgPath")]
-        public string ImgPath { get; set; }
-
-        [XmlElement(ElementName = "useYn")]
-        public string UseYn { get; set; }
-
-        [XmlElement(ElementName = "insertTs")]
-        public DateTime InsertTs { get; set; }
+        [XmlElement(ElementName = "delYn")]
+        public string DelYn { get; set; }
 
         [XmlElement(ElementName = "updateTs")]
         public DateTime UpdateTs { get; set; }
@@ -45,6 +36,7 @@ public class MetaBackGround : MonoBehaviour
         [XmlElement(ElementName = "data")]
         public List<Data> Data { get; set; }
     }
+
 
     public List<GameObject> MetaImgList = new List<GameObject>();
 
@@ -91,7 +83,7 @@ public class MetaBackGround : MonoBehaviour
             JSONObject Img = JsonConvert.DeserializeObject<JSONObject>(ww.downloadHandler.text);
             for (int i = 0; i < Img.Data.Count; i++)
             {
-                UnityWebRequest www = UnityWebRequestTexture.GetTexture(Img.Data[i].ImgPath);
+                UnityWebRequest www = UnityWebRequestTexture.GetTexture(Img.Data[i].CartoonPageImgPath);
                 yield return www.SendWebRequest();
 
                 if (www.isNetworkError || www.isHttpError)

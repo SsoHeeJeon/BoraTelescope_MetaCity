@@ -45,6 +45,7 @@ public class QRMaker : MonoBehaviour
             //string url = "https://borabucket.s3.ap-northeast-2.amazonaws.com/" + filename;
             
             url = "https://dev-xr.awesomepia.com/cms/photo_view.do?photoId=" + url;
+            print("url = " + url);
             //url = "https://xr.awesomepia.com/cms/photo_view.do?photoId=" + url;
             Texture2D QRImage = CreateQR(url);
             QRCodeImage.texture = QRImage;

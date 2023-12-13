@@ -91,6 +91,7 @@ public class UploadImage : QRMaker
     */
     public void PutImageObject(string filepath, string filename)
     {
+        print(2323);
         HttpClient httpClient = new HttpClient();
         MultipartFormDataContent form = new MultipartFormDataContent();
 
